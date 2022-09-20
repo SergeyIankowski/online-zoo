@@ -1,0 +1,9 @@
+.link {
+  text-decoration: none;
+  color: $link-color;
+  font: normal 500 16px/140% 'Roboto';
+}
+
+.link:hover {
+  color: $link-hover;
+}
