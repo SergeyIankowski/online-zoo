@@ -472,6 +472,10 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .layout-horizontal {
   display: flex;
   flex-direction: row;
@@ -542,6 +546,13 @@ table {
   gap: 58px;
 }
 
+.navigation__link_active {
+  color: #FE9013;
+}
+.navigation__link_active:hover {
+  color: #4B9200;
+}
+
 .header {
   background-color: #000000;
 }
@@ -571,6 +582,9 @@ table {
   border: 1px solid #FFFFFF;
   border-radius: 2px;
 }
+.logo:hover {
+  cursor: pointer;
+}
 
 .logo__title {
   position: absolute;
@@ -591,15 +605,15 @@ table {
 
 .watch-favor-animal .wrapper {
   background-image: url("../../assets/images/giant-panda.jpg");
-  background-size: contain;
-  height: 780px;
+  background-position: bottom;
+  height: 700px;
   position: relative;
 }
 
 .watch-favor-animal__content {
   width: 500px;
   position: absolute;
-  top: 89px;
+  top: 87px;
   right: 219.69px;
 }
 
@@ -607,7 +621,7 @@ table {
   content: "";
   display: block;
   position: absolute;
-  top: -74px;
+  top: -75px;
   left: -73px;
   z-index: 1;
   width: 465px;
@@ -634,6 +648,472 @@ table {
 
 .watch-favor-animal__title {
   gap: 60px;
+}
+
+.backstage {
+  position: relative;
+}
+
+.backstage__layout {
+  gap: 87px;
+  margin: 140px 0 0;
+  padding: 0 220px;
+  align-items: stretch;
+}
+
+.backstage__bg-img {
+  position: absolute;
+  right: 0;
+  top: -128px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.backstage__column {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.backstage__column :nth-child(4n+2) {
+  margin-bottom: 54px;
+}
+
+.backstage__title {
+  font: normal 400 48px/120% "Roboto";
+  margin-bottom: 20px;
+}
+
+.backstage__subtitle {
+  font: normal 400 24px/120% "Roboto";
+  margin-bottom: 32px;
+}
+
+.backstage__description {
+  font: normal 400 16px/140% "Roboto";
+}
+
+.animal-cards {
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.animal-cards__layout {
+  gap: 80px;
+}
+
+.animal-cards__grid-layout {
+  position: relative;
+  gap: 20px 30px;
+  padding: 0 220px;
+  margin-top: 176px;
+}
+
+.animal-cards__button-left-arrow {
+  position: absolute;
+  top: 403px;
+  left: 138px;
+}
+
+.animal-cards__button-right-arrow {
+  position: absolute;
+  top: 403px;
+  right: 140px;
+}
+
+.animal-cards__button {
+  margin: 0 auto;
+}
+
+.animal-cards__img-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.animal-cards__img-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.pet-card {
+  border-radius: 5px;
+  align-items: stretch;
+  overflow: hidden;
+  border: 2px solid #F9804B;
+  width: 366px;
+  height: 426px;
+}
+.pet-card:hover {
+  background-color: #e5e5e5;
+  transition: 0.5s;
+}
+.pet-card:hover .pet-card__image {
+  transform: scale(1.0276);
+  transition: 0.5s;
+}
+.pet-card:hover .pet-card__description .pet-card__title {
+  margin-left: 0;
+  transition: 0.7s;
+}
+.pet-card:hover .pet-card__description .pet-card__areal {
+  margin-left: 0;
+  transition: 0.7s;
+}
+.pet-card:hover .pet-card__description .pet-cart__feed-icon {
+  margin-right: 0;
+  transition: 0.5s;
+}
+
+.pet-card__image {
+  width: 364px;
+  height: 364px;
+}
+
+.pet-card__description {
+  display: grid;
+  grid-template-areas: "a c" "b c";
+  overflow: hidden;
+  padding: 8px 8px 14px 14px;
+}
+
+.pet-card__title {
+  grid-area: a;
+  justify-self: start;
+  font: normal 500 16px/140% "Roboto";
+  text-transform: uppercase;
+  margin-left: -500px;
+}
+
+.pet-card__areal {
+  grid-area: b;
+  justify-self: start;
+  font: normal 300 15px/120% "Roboto";
+  margin-left: -500px;
+}
+
+.pet-cart__feed-icon {
+  grid-area: c;
+  justify-self: end;
+  margin-right: -100px;
+}
+
+.peek-feed-friend__layout {
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  opacity: 0.9;
+  padding: 69px 220px 100px;
+}
+
+.peek-feed-friend__container {
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 41px 0 59px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.peek-feed-friend__title-first {
+  font: normal 400 48px/120% "Roboto";
+  color: #FE9013;
+  padding-bottom: 20px;
+}
+
+.peek-feed-friend__title-second {
+  font: normal 400 24px/120% "Roboto";
+  color: #333b41;
+  align-self: start;
+  padding-left: 99px;
+  padding-bottom: 30px;
+}
+
+.peek-feed-friend__title-third {
+  font: normal 400 36px/130% "Roboto";
+  color: #333b41;
+  margin-bottom: 26px;
+}
+
+.peek-feed-friend__description {
+  font: normal 400 16px/130% "Roboto";
+  color: #333b41;
+  align-self: flex-start;
+  padding-left: 99px;
+  padding-right: 199px;
+  margin-bottom: 50px;
+}
+
+.peek-feed-friend__description_bolded {
+  font: normal 500 16px/130% "Roboto";
+  padding-right: 0;
+  margin-bottom: 0;
+}
+
+.peek-feed-friend__steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 31px;
+  margin-bottom: 50px;
+}
+
+.peek-feed-friend__steps-arrow-container {
+  position: relative;
+  width: 69px;
+  height: 96px;
+}
+
+.peek-feed-friend__steps-arrow {
+  position: absolute;
+  bottom: 0;
+}
+
+.peek-feed-friend__button {
+  justify-self: center;
+}
+
+.peek-feed-friend__step {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.peek-feed-friend__step-icon-container {
+  width: 168px;
+  height: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #F9804B;
+  border-radius: 5px;
+}
+
+.peek-feed-friend__step-description {
+  font: normal 400 16px/140% "Roboto";
+  width: 168px;
+}
+
+.testimonials {
+  padding: 140px 0 180px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../../assets/images/leav-foto.png");
+  background-repeat: no-repeat;
+  background-position: right -163px bottom -132px;
+}
+
+.testimonials__layout {
+  padding: 0 220px;
+}
+
+.testimonials__title {
+  font: normal 400 36px/140% "Roboto";
+  color: #333B41;
+  margin-bottom: 45px;
+}
+
+.testimonials__container {
+  gap: 30px;
+  margin-bottom: 21px;
+}
+
+.testimonials__progress-bar-container {
+  width: 599px;
+  height: 8px;
+  padding: 1px;
+  margin-bottom: 31px;
+  position: relative;
+  border: solid 0.5px transparent;
+  border-radius: 5px;
+  background: #F5F7F6;
+  background-clip: padding-box;
+}
+.testimonials__progress-bar-container::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: -0.5px;
+  border-radius: inherit;
+  background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.testimonials__progress-bar {
+  height: 100%;
+  width: 19%;
+  border-radius: inherit;
+  background-color: #FE9013;
+}
+
+.testimonials__button {
+  align-self: flex-start;
+}
+
+.testimonial {
+  width: 268px;
+  height: 391px;
+  padding: 12px 15px 15px;
+  background: #F1F3F2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  border: solid 2px transparent;
+  border-radius: 20px;
+  background-clip: padding-box;
+}
+.testimonial::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: -2px;
+  border-radius: inherit;
+  background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.testimonial__head {
+  display: grid;
+  grid-template-areas: "a b" "a c";
+  column-gap: 10px;
+  align-items: start;
+  align-content: start;
+  justify-content: start;
+}
+
+.testimonial__photo {
+  grid-area: a;
+  justify-self: self-start;
+}
+
+.testimonial__title {
+  grid-area: b;
+  font: normal 400 16px/120% "Roboto";
+}
+
+.testimonial__location {
+  grid-area: c;
+  font: normal 300 15px/120% "Roboto";
+  color: #BDBDBD;
+  display: flex;
+  gap: 7px;
+}
+
+.testimonial__description {
+  font: normal 300 15px/120% "Roboto";
+  color: #767474;
+  overflow: hidden;
+}
+
+.testimonials__bg-photo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(30.2deg);
+}
+
+.footer {
+  background-color: #000000;
+  height: 443px;
+}
+
+.footer__layout {
+  height: 443px;
+  padding: 40px 220px 50px;
+  width: inherit;
+  display: grid;
+  grid-template-areas: "a . b" "c . ." "d e f";
+}
+
+.footer__form {
+  margin-left: -11px;
+}
+
+.footer__title {
+  font: normal 400 24px/120% "Roboto";
+  color: #ffffff;
+  display: block;
+  padding-bottom: 14px;
+}
+
+.footer__logo {
+  grid-area: a;
+}
+
+.footer__button {
+  grid-area: c;
+  align-self: start;
+  margin-top: 13px;
+}
+
+.footer__navigation {
+  grid-area: e;
+  align-self: end;
+  justify-self: end;
+  margin-right: -10px;
+}
+
+.footer__social-media {
+  align-items: flex-start;
+  gap: 10px;
+  grid-area: d;
+  align-self: end;
+  justify-self: start;
+}
+
+.footer__social-media-item {
+  font: normal 400 16px/140% "Roboto";
+  color: #ffffff;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.footer__navigation-list {
+  justify-content: flex-start;
+}
+
+.footer__form {
+  grid-area: b;
+  justify-self: end;
+}
+
+.footer__subscribe-button {
+  width: 129px;
+  height: 42px;
+  color: #000000;
+  background: #ffffff;
+}
+
+.footer__subscribe-input {
+  font: normal 400 16px/140% "Roboto";
+  color: #ffffff;
+  width: 228px;
+  height: 42px;
+  box-sizing: border-box;
+  border: 0.7px solid #F9804B;
+  background: #000000;
+  padding-left: 10px;
+  margin-right: 6px;
+}
+
+.footer__captions {
+  grid-area: f;
+  align-self: end;
+  justify-self: end;
+  gap: 10px;
+}
+
+.footer__caption {
+  font: normal 100 16px/130% "Roboto";
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
