@@ -1,3 +1,11 @@
 .navigation__list {
   gap: 58px;
 }
+
+.navigation__link_active {
+  color: $link-hover;
+
+  &:hover {
+    color: $link-active;
+  }
+}

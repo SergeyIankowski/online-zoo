@@ -2,6 +2,7 @@
 
 @import './base/normalize';
 @import './base/reset';
+@import './base/global';
 
 @import './layout/layout-horizontal';
 @import './layout/layout-vertical';
@@ -14,3 +15,11 @@
 @import './components/header';
 @import './components/logo';
 @import './components/watchFavorAnimal';
+@import './components/backstage';
+@import './components/animalCards';
+@import './components/animalCard';
+@import './components/peekFeedFriend';
+@import './components/peekFeedFriendStep';
+@import './components/testimonials';
+@import './components/testimonial';
+@import './components/footer';

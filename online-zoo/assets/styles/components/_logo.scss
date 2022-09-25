@@ -4,6 +4,10 @@
   height: 52px;
   border: 1px solid #FFFFFF;
   border-radius: 2px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .logo__title {
