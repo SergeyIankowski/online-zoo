@@ -1,0 +1,196 @@
+.choice-donation__title {
+  font: normal 400 48px/120% 'Roboto';
+  color: $text-color-colored;
+  margin-bottom: 10px;
+}
+
+.choice-donation__description {
+  font: normal 400 24px/120% 'Roboto';
+  color: #333B41;
+  margin-bottom: 60px;
+}
+
+.choice-donation__overview {
+  align-items: flex-start;
+}
+
+.choice-donation__amount {
+  gap: 11px;
+}
+
+.choice-donation__amount-value {
+  font: normal 500 72px/80% 'Roboto';
+}
+
+.choice-donation__amount-description {
+  font: normal 400 16px/140% 'Roboto';
+}
+
+.choice-donation-form {
+  width: 100%;
+}
+
+.choice-donation-form__fix-amount-radio {
+  display: none;
+}
+
+.fix-amount-bar {
+  width: 100%;
+  position: relative;
+  gap: 6px;
+
+
+  .fix-amount-bar__bg-line {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    height: 2px;
+    width: 94%;
+    background-color: #72828e;
+    z-index: 1;
+  }
+}
+
+.fix-amount-bar__markers {
+  padding: 0 11px;
+  justify-content: space-between;
+
+  height: 27px;
+  background: #404950;
+}
+
+.fix-amount-bar__values {
+  justify-content: flex-start;
+  gap: 52px;
+}
+
+.fix-amount-bar__marker {
+  position: relative;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%);
+}
+
+.fix-amount-bar__marker:hover {
+  background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
+}
+
+.fix-amount-bar__value {
+  font: normal 500 26px/140% 'Roboto';
+}
+
+.another-amount__time-period {
+  background: rgba($color: #000000, $alpha: 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#btn-5000:checked~.fix-amount-bar {
+  .fix-amount-bar__marker_5000 {
+    background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
+  }
+
+  .fix-amount-bar__value_5000 {
+    color: #FE9013;
+  }
+}
+
+#btn-2000:checked~.fix-amount-bar {
+  .fix-amount-bar__marker_2000 {
+    background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
+  }
+
+  .fix-amount-bar__value_2000 {
+    color: #FE9013;
+  }
+}
+
+#btn-1000:checked~.fix-amount-bar {
+  .fix-amount-bar__marker_1000 {
+    background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
+  }
+
+  .fix-amount-bar__value_1000 {
+    color: #FE9013;
+  }
+}
+
+#btn-500:checked~.fix-amount-bar {
+  .fix-amount-bar__marker_500 {
+    background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
+  }
+
+  .fix-amount-bar__value_500 {
+    color: #FE9013;
+  }
+}
+
+#btn-250:checked~.fix-amount-bar {
+  .fix-amount-bar__marker_250 {
+    background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
+  }
+
+  .fix-amount-bar__value_250 {
+    color: #FE9013;
+  }
+}
+
+#btn-100:checked~.fix-amount-bar {
+  .fix-amount-bar__marker_100 {
+    background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
+  }
+
+  .fix-amount-bar__value_100 {
+    color: #FE9013;
+  }
+}
+
+#btn-50:checked~.fix-amount-bar {
+  .fix-amount-bar__marker_50 {
+    background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
+  }
+
+  .fix-amount-bar__value_50 {
+    color: #FE9013;
+  }
+}
+
+#btn-25:checked~.fix-amount-bar {
+  .fix-amount-bar__marker_25 {
+    background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
+  }
+
+  .fix-amount-bar__value_25 {
+    color: #FE9013;
+  }
+}

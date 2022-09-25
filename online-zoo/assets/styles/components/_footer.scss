@@ -1,0 +1,99 @@
+.footer {
+  background-color: #000000;
+  height: 443px;
+
+}
+
+.footer__layout {
+  height: 443px;
+  padding: 40px 220px 50px;
+  width: inherit;
+  display: grid;
+  grid-template-areas: 'a . b''c . .''d e f';
+}
+
+.footer__form {
+  margin-left: -11px;
+}
+
+.footer__title {
+  font: normal 400 24px/120% 'Roboto';
+  color: $text-color-light;
+  display: block;
+  padding-bottom: 14px;
+}
+
+.footer__logo {
+  grid-area: a;
+}
+
+.footer__button {
+  grid-area: c;
+  align-self: start;
+  margin-top: 13px;
+}
+
+.footer__navigation {
+  grid-area: e;
+  align-self: end;
+  justify-self: end;
+  margin-right: -10px;
+}
+
+.footer__social-media {
+  align-items: flex-start;
+  gap: 10px;
+
+  grid-area: d;
+  align-self: end;
+  justify-self: start;
+}
+
+.footer__social-media-item {
+  font: normal 400 16px/140% 'Roboto';
+  color: $text-color-light;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.footer__navigation-list {
+  justify-content: flex-start;
+}
+
+.footer__form {
+  grid-area: b;
+  justify-self: end;
+}
+
+.footer__subscribe-button {
+  width: 129px;
+  height: 42px;
+  color: #000000;
+  background: #ffffff;
+}
+
+.footer__subscribe-input {
+  font: normal 400 16px/140% 'Roboto';
+  color: $text-color-light;
+  width: 228px;
+  height: 42px;
+  box-sizing: border-box;
+  border: 0.7px solid $input-border-color;
+  background: #000000;
+  padding-left: 10px;
+  margin-right: 6px;
+}
+
+.footer__captions {
+  grid-area: f;
+  align-self: end;
+  justify-self: end;
+
+  gap: 10px;
+}
+
+.footer__caption {
+  font: normal 100 16px/130% 'Roboto';
+  color: $text-color-light;
+
+}

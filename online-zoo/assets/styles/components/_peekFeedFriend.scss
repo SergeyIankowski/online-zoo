@@ -1,0 +1,85 @@
+.peek-feed-friend__layout {
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  opacity: 0.9;
+  padding: 69px 220px 100px;
+}
+
+.peek-feed-friend__container {
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 41px 0 59px;
+  // display: grid;
+  // grid-template-rows: 89px 69px 32px 102px 85px 304px;
+  // align-items: start;
+  // justify-items: center;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  gap: 11px;
+}
+
+// .peek-feed-friend__container :nth-child(n) {
+//   padding-left: 99px;
+//   padding-right: 99px;
+// }
+
+.peek-feed-friend__title-first {
+  font: normal 400 48px/120% 'Roboto';
+  color: $text-color-colored;
+  padding-bottom: 20px;
+}
+
+.peek-feed-friend__title-second {
+  font: normal 400 24px/120% 'Roboto';
+  color: $pick-feed-friend-text-color;
+  align-self: start;
+  padding-left: 99px;
+  padding-bottom: 30px;
+
+}
+
+.peek-feed-friend__title-third {
+  font: normal 400 36px/130% 'Roboto';
+  color: $pick-feed-friend-text-color;
+  margin-bottom: 26px;
+}
+
+.peek-feed-friend__description {
+  font: normal 400 16px/130% 'Roboto';
+  color: $pick-feed-friend-text-color;
+  align-self: flex-start;
+  padding-left: 99px;
+  padding-right: 199px;
+  margin-bottom: 50px;
+}
+
+.peek-feed-friend__description_bolded {
+  font: normal 500 16px/130% 'Roboto';
+  padding-right: 0;
+  margin-bottom: 0;
+}
+
+.peek-feed-friend__steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 31px;
+  margin-bottom: 50px;
+}
+
+.peek-feed-friend__steps-arrow-container {
+  position: relative;
+  width: 69px;
+  height: 96px;
+
+}
+
+.peek-feed-friend__steps-arrow {
+  position: absolute;
+  bottom: 0;
+}
+
+.peek-feed-friend__button {
+  justify-self: center;
+}

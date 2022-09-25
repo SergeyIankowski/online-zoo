@@ -1,0 +1,71 @@
+.pet-card {
+  border-radius: 5px;
+  align-items: stretch;
+  overflow: hidden;
+  border: 2px solid $gradient-color-one;
+  width: 366px;
+  height: 426px;
+
+  &:hover {
+    .pet-card__image {
+      transform: scale(1.0276);
+      transition: 0.5s;
+    }
+
+    .pet-card__description {
+      .pet-card__title {
+        margin-left: 0;
+        transition: 0.7s;
+      }
+
+      .pet-card__areal {
+        margin-left: 0;
+        transition: 0.7s;
+      }
+
+      .pet-cart__feed-icon {
+        margin-right: 0;
+        transition: 0.5s;
+      }
+    }
+
+    background-color: #e5e5e5;
+    transition: 0.5s;
+  }
+}
+
+
+
+.pet-card__image {
+  width: 364px;
+  height: 364px;
+}
+
+
+.pet-card__description {
+  display: grid;
+  grid-template-areas: 'a c''b c';
+  overflow: hidden;
+  padding: 8px 8px 14px 14px;
+}
+
+.pet-card__title {
+  grid-area: a;
+  justify-self: start;
+  font: normal 500 16px/140% 'Roboto';
+  text-transform: uppercase;
+  margin-left: -500px;
+}
+
+.pet-card__areal {
+  grid-area: b;
+  justify-self: start;
+  font: normal 300 15px/120% 'Roboto';
+  margin-left: -500px;
+}
+
+.pet-cart__feed-icon {
+  grid-area: c;
+  justify-self: end;
+  margin-right: -100px;
+}

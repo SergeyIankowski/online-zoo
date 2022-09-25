@@ -1,14 +1,14 @@
 .watch-favor-animal .wrapper {
   background-image: url('../../assets/images/giant-panda.jpg');
-  background-size: contain;
-  height: 780px;
+  background-position: bottom;
+  height: 700px;
   position: relative;
 }
 
 .watch-favor-animal__content {
   width: 500px;
   position: absolute;
-  top: 89px;
+  top: 87px;
   right: 219.69px;
 }
 
@@ -16,7 +16,7 @@
   content: '';
   display: block;
   position: absolute;
-  top: -74px;
+  top: -75px;
   left: -73px;
   z-index: 1;
   width: 465px;

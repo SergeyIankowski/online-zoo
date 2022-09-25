@@ -1,0 +1,43 @@
+.backstage {
+  position: relative;
+  // background-image: url('../../assets/images/flower-foto1.png');
+  // background-position: top right;
+  // background-repeat: no-repeat;
+}
+
+.backstage__layout {
+  gap: 87px;
+  margin: 140px 0 0;
+  padding: 0 220px;
+  align-items: stretch;
+}
+
+.backstage__bg-img {
+  position: absolute;
+  right: 0;
+  top: -128px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.backstage__column {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.backstage__column :nth-child(4n+2) {
+  margin-bottom: 54px;
+}
+
+.backstage__title {
+  font: normal 400 48px/120% 'Roboto';
+  margin-bottom: 20px;
+}
+
+.backstage__subtitle {
+  font: normal 400 24px/120% 'Roboto';
+  margin-bottom: 32px;
+}
+
+.backstage__description {
+  font: normal 400 16px/140% 'Roboto';
+}
