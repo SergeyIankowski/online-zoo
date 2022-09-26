@@ -9,20 +9,11 @@
   backdrop-filter: blur(2px);
   border-radius: 20px;
   padding: 41px 0 59px;
-  // display: grid;
-  // grid-template-rows: 89px 69px 32px 102px 85px 304px;
-  // align-items: start;
-  // justify-items: center;
+
   display: flex;
   flex-direction: column;
-  // align-items: center;
   gap: 11px;
 }
-
-// .peek-feed-friend__container :nth-child(n) {
-//   padding-left: 99px;
-//   padding-right: 99px;
-// }
 
 .peek-feed-friend__title-first {
   font: normal 400 48px/120% 'Roboto';
@@ -82,4 +73,8 @@
 
 .peek-feed-friend__button {
   justify-self: center;
+}
+
+.peek-feed-friend__link {
+  color: #333B41;
 }

@@ -49,11 +49,28 @@
   justify-self: start;
 }
 
+.footer__social-media-link {
+  text-decoration: none;
+
+  color: $text-color-light;
+
+}
+
 .footer__social-media-item {
   font: normal 400 16px/140% 'Roboto';
   color: $text-color-light;
   align-items: flex-end;
   gap: 12px;
+
+  &:hover {
+    img {
+      filter: invert(52%) sepia(63%) saturate(5770%) hue-rotate(62deg) brightness(97%) contrast(101%);
+    }
+
+    a {
+      filter: invert(52%) sepia(63%) saturate(5770%) hue-rotate(62deg) brightness(97%) contrast(101%);
+    }
+  }
 }
 
 .footer__navigation-list {
@@ -68,8 +85,6 @@
 .footer__subscribe-button {
   width: 129px;
   height: 42px;
-  color: #000000;
-  background: #ffffff;
 }
 
 .footer__subscribe-input {
@@ -88,12 +103,10 @@
   grid-area: f;
   align-self: end;
   justify-self: end;
-
   gap: 10px;
 }
 
 .footer__caption {
   font: normal 100 16px/130% 'Roboto';
   color: $text-color-light;
-
 }

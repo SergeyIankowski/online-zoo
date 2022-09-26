@@ -1,7 +1,8 @@
 .choice-donation__title {
   font: normal 400 48px/120% 'Roboto';
   color: $text-color-colored;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-left: 250px;
 }
 
 .choice-donation__description {
@@ -12,11 +13,28 @@
 
 .choice-donation__overview {
   align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+.choice-donation-form__title {
+  font: normal 400 16px/140% 'Roboto';
+  align-self: flex-start;
+  padding-bottom: 10px;
+  padding-left: 5px;
 }
 
 .choice-donation__amount {
+  padding-top: 105px;
+  padding-left: 215px;
   gap: 11px;
 }
+
+.choice-donation__multiply {
+  padding-top: 130px;
+  padding-left: 12px;
+  padding-right: 65px;
+}
+
 
 .choice-donation__amount-value {
   font: normal 500 72px/80% 'Roboto';
@@ -26,19 +44,15 @@
   font: normal 400 16px/140% 'Roboto';
 }
 
-.choice-donation-form {
-  width: 100%;
-}
 
 .choice-donation-form__fix-amount-radio {
   display: none;
 }
 
-.fix-amount-bar {
+.choice-donation-form {
   width: 100%;
   position: relative;
   gap: 6px;
-
 
   .fix-amount-bar__bg-line {
     position: absolute;
@@ -51,20 +65,29 @@
   }
 }
 
-.fix-amount-bar__markers {
+.choice-donation-form__bar {
+  width: 100%;
+}
+
+.choice-donation-form__markers {
   padding: 0 11px;
   justify-content: space-between;
-
+  margin-bottom: 12px;
   height: 27px;
   background: #404950;
+  width: 100%;
 }
 
-.fix-amount-bar__values {
-  justify-content: flex-start;
-  gap: 52px;
+.choice-donation-form__values {
+  justify-content: space-between;
+  margin-bottom: 44px;
+
+  & :nth-child(n+6) {
+    padding-right: 20px;
+  }
 }
 
-.fix-amount-bar__marker {
+.choice-donation-form__marker {
   position: relative;
   z-index: 2;
   width: 40px;
@@ -75,16 +98,77 @@
   background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%);
 }
 
-.fix-amount-bar__marker:hover {
+.choice-donation-form__marker:hover {
   background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
 }
 
-.fix-amount-bar__value {
+.choice-donation-form__value {
   font: normal 500 26px/140% 'Roboto';
 }
 
-.another-amount__time-period {
-  background: rgba($color: #000000, $alpha: 0);
+.another-amount {
+  position: relative;
+
+  & .dollar-icon {
+    position: absolute;
+    top: 23%;
+    right: 4%;
+    filter: invert(69%) sepia(0%) saturate(903%) hue-rotate(259deg) brightness(86%) contrast(95%);
+  }
+}
+
+.another-amount__input {
+  border: 1px solid #929699;
+  border-radius: 2px;
+  background-color: rgba($color: #000000, $alpha: 0);
+  font: normal 400 16px/140% 'Roboto';
+  width: 268px;
+  height: 54px;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    font: normal 400 16px/140% 'Roboto';
+    padding-left: 9px;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.time-period {
+  gap: 50px;
+  margin-bottom: 22px;
+}
+
+.time-period__radio {
+  display: none;
+}
+
+#time-period-radio_monthly:checked~.time-period__description_monthly {
+  background-image: url('../../assets/icons/radio-checked.svg');
+}
+
+#time-period-radio_once:checked~.time-period__description_once {
+  background-image: url('../../assets/icons/radio-checked.svg');
+}
+
+.time-period__description {
+  font: normal 400 16px/140% 'Roboto';
+  padding: 0 0 0 20px;
+  background-image: url('../../assets/icons/radio-unchecked.svg');
+  background-repeat: no-repeat;
+  background-position: left 0% top 30%;
+}
+
+.choice-donation-form__button {
+  margin-bottom: 25px;
+}
+
+.another-amount__caption {
+  font: normal 400 16px/140% 'Roboto';
 }
 
 
@@ -115,82 +199,99 @@
 
 
 
-#btn-5000:checked~.fix-amount-bar {
-  .fix-amount-bar__marker_5000 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.time-period__radio #btn-5000:checked~.choice-donation-form__bar {
+  .choice-donation-form__marker_5000 {
     background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
   }
 
-  .fix-amount-bar__value_5000 {
+  .choice-donation-form__value_5000 {
     color: #FE9013;
   }
 }
 
-#btn-2000:checked~.fix-amount-bar {
-  .fix-amount-bar__marker_2000 {
+#btn-2000:checked~.choice-donation-form__bar {
+  .choice-donation-form__marker_2000 {
     background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
   }
 
-  .fix-amount-bar__value_2000 {
+  .choice-donation-form__value_2000 {
     color: #FE9013;
   }
 }
 
-#btn-1000:checked~.fix-amount-bar {
-  .fix-amount-bar__marker_1000 {
+#btn-1000:checked~.choice-donation-form__bar {
+  .choice-donation-form__marker_1000 {
     background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
   }
 
-  .fix-amount-bar__value_1000 {
+  .choice-donation-form__value_1000 {
     color: #FE9013;
   }
 }
 
-#btn-500:checked~.fix-amount-bar {
-  .fix-amount-bar__marker_500 {
+#btn-500:checked~.choice-donation-form__bar {
+  .choice-donation-form__marker_500 {
     background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
   }
 
-  .fix-amount-bar__value_500 {
+  .choice-donation-form__value_500 {
     color: #FE9013;
   }
 }
 
-#btn-250:checked~.fix-amount-bar {
-  .fix-amount-bar__marker_250 {
+#btn-250:checked~.choice-donation-form__bar {
+  .choice-donation-form__marker_250 {
     background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
   }
 
-  .fix-amount-bar__value_250 {
+  .choice-donation-form__value_250 {
     color: #FE9013;
   }
 }
 
-#btn-100:checked~.fix-amount-bar {
-  .fix-amount-bar__marker_100 {
+#btn-100:checked~.choice-donation-form__bar {
+  .choice-donation-form__marker_100 {
     background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
   }
 
-  .fix-amount-bar__value_100 {
+  .choice-donation-form__value_100 {
     color: #FE9013;
   }
 }
 
-#btn-50:checked~.fix-amount-bar {
-  .fix-amount-bar__marker_50 {
+#btn-50:checked~.choice-donation-form__bar {
+  .choice-donation-form__marker_50 {
     background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
   }
 
-  .fix-amount-bar__value_50 {
+  .choice-donation-form__value_50 {
     color: #FE9013;
   }
 }
 
-#btn-25:checked~.fix-amount-bar {
-  .fix-amount-bar__marker_25 {
+#btn-25:checked~.choice-donation-form__bar {
+  .choice-donation-form__marker_25 {
     background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
   }
 
-  .fix-amount-bar__value_25 {
+  .choice-donation-form__value_25 {
     color: #FE9013;
   }
 }

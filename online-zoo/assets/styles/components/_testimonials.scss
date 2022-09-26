@@ -50,11 +50,19 @@ $progress-bar-border: 0.5px;
   }
 }
 
+.testimonials__progress-bar-container {
+  cursor: pointer;
+}
+
 .testimonials__progress-bar {
   height: 100%;
   width: 19%;
   border-radius: inherit;
   background-color: #FE9013;
+
+  &:hover {
+    filter: invert(52%) sepia(63%) saturate(5770%) hue-rotate(62deg) brightness(97%) contrast(101%);
+  }
 }
 
 .testimonials__button {

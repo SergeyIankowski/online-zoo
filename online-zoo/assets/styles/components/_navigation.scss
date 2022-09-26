@@ -4,8 +4,8 @@
 
 .navigation__link_active {
   color: $link-hover;
-
-  &:hover {
-    color: $link-active;
-  }
+  cursor: default;
+  // &:hover {
+  //   color: $link-active;
+  // }
 }
