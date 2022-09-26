@@ -1,0 +1,46 @@
+.watch-favor-animal .wrapper {
+  background-image: url('../../assets/images/giant-panda.jpg');
+  background-position: bottom;
+  height: 700px;
+  position: relative;
+}
+
+.watch-favor-animal__content {
+  width: 500px;
+  position: absolute;
+  top: 87px;
+  right: 219.69px;
+}
+
+.watch-favor-animal__content::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -75px;
+  left: -73px;
+  z-index: 1;
+  width: 465px;
+  height: 465px;
+  border-radius: 50%;
+  background: linear-gradient(113.96deg, $gradient-color-one 1.49%, $gradient-color-two 101.44%);
+}
+
+.watch-favor-animal__text {
+  font: normal 700 106px/75% 'Roboto';
+  color: $text-color-light;
+  text-transform: uppercase;
+  z-index: 2;
+  text-align: center;
+}
+
+.watch-favor-animal__text_colored {
+  color: #FFEE2E;
+}
+
+.watch-favor-animal__button {
+  z-index: 2;
+}
+
+.watch-favor-animal__title {
+  gap: 60px;
+}

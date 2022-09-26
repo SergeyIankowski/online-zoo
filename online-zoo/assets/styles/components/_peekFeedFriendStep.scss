@@ -1,0 +1,23 @@
+.peek-feed-friend__step {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.peek-feed-friend__step-icon-container {
+  width: 168px;
+  height: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #F9804B;
+  border-radius: 5px;
+}
+
+.peek-feed-friend__step-description {
+  font: normal 400 16px/140% 'Roboto';
+  width: 168px;
+}

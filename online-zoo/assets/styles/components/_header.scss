@@ -1,0 +1,21 @@
+.header {
+  background-color: $header-bg-color;
+}
+
+.header__layout {
+  height: 80px;
+  padding: 0 220px;
+  display: grid;
+  grid-template-columns: 83px repeat(2, 1fr);
+  align-items: center;
+  align-content: center;
+  gap: 63px;
+}
+
+.header__navigation {
+  justify-self: start;
+}
+
+.header__designed {
+  justify-self: end;
+}

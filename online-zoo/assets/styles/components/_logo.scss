@@ -1,0 +1,29 @@
+.logo {
+  position: relative;
+  width: 82px;
+  height: 52px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.logo__title {
+  position: absolute;
+  left: 4.75px;
+  top: 3.55px;
+
+  font: normal 400 19px/120% "Roboto";
+  color: $text-color-light;
+  text-align: center;
+  z-index: 1;
+}
+
+.logo__icon {
+  position: absolute;
+  z-index: 2;
+  left: 10.5px;
+  top: 23px;
+}

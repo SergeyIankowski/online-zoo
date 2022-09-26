@@ -1,0 +1,43 @@
+.animal-cards {
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.animal-cards__layout {
+  gap: 80px;
+}
+
+.animal-cards__grid-layout {
+  position: relative;
+  gap: 20px 30px;
+  padding: 0 220px;
+  margin-top: 176px;
+}
+
+.animal-cards__button-left-arrow {
+  position: absolute;
+  top: 403px;
+  left: 138px;
+}
+
+.animal-cards__button-right-arrow {
+  position: absolute;
+  top: 403px;
+  right: 140px;
+}
+
+.animal-cards__button {
+  margin: 0 auto;
+}
+
+.animal-cards__img-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.animal-cards__img-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
