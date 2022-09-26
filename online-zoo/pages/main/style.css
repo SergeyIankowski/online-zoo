@@ -518,8 +518,9 @@ table {
   background: #4B9200;
 }
 
-.button:disabled {
-  background: #767474;
+.button_mistake {
+  color: #000000;
+  background: #ffffff;
 }
 
 .button_border-rounded {
@@ -548,9 +549,7 @@ table {
 
 .navigation__link_active {
   color: #FE9013;
-}
-.navigation__link_active:hover {
-  color: #4B9200;
+  cursor: default;
 }
 
 .header {
@@ -871,6 +870,10 @@ table {
   justify-self: center;
 }
 
+.peek-feed-friend__link {
+  color: #333B41;
+}
+
 .peek-feed-friend__step {
   display: flex;
   flex-direction: column;
@@ -943,11 +946,18 @@ table {
   background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
 
+.testimonials__progress-bar-container {
+  cursor: pointer;
+}
+
 .testimonials__progress-bar {
   height: 100%;
   width: 19%;
   border-radius: inherit;
   background-color: #FE9013;
+}
+.testimonials__progress-bar:hover {
+  filter: invert(52%) sepia(63%) saturate(5770%) hue-rotate(62deg) brightness(97%) contrast(101%);
 }
 
 .testimonials__button {
@@ -1069,11 +1079,22 @@ table {
   justify-self: start;
 }
 
+.footer__social-media-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .footer__social-media-item {
   font: normal 400 16px/140% "Roboto";
   color: #ffffff;
   align-items: flex-end;
   gap: 12px;
+}
+.footer__social-media-item:hover img {
+  filter: invert(52%) sepia(63%) saturate(5770%) hue-rotate(62deg) brightness(97%) contrast(101%);
+}
+.footer__social-media-item:hover a {
+  filter: invert(52%) sepia(63%) saturate(5770%) hue-rotate(62deg) brightness(97%) contrast(101%);
 }
 
 .footer__navigation-list {
@@ -1088,8 +1109,6 @@ table {
 .footer__subscribe-button {
   width: 129px;
   height: 42px;
-  color: #000000;
-  background: #ffffff;
 }
 
 .footer__subscribe-input {

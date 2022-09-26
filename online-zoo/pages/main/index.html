@@ -22,8 +22,8 @@
         </div>
         <nav class="navigation header__navigation">
           <ul class="navigation__list layout-horizontal">
-            <li class="navigation__item"><a href="#"
-                class="link navigation__link header__link navigation__link_active">About</a>
+            <li class="navigation__item">
+              <p class="link navigation__link header__link navigation__link_active">About</p>
             </li>
             <li class="navigation__item"><a href="#" class="link navigation__link header__link">Map</a></li>
             <li class="navigation__item"><a href="#" class="link navigation__link header__link">Zoos</a></li>
@@ -158,7 +158,9 @@
             PetStory.
           </p>
           <p class="peek-feed-friend__description">Even though the zoo has reopened, we need you now more than ever to
-            help us deal with these problems. Please consider a gift to our Emergency Support Fund . </p>
+            help us deal with these problems. Please consider a gift to our <a class="peek-feed-friend__link"
+              href="../donate/index.html">Emergency
+              Support Fund</a>. </p>
 
           <h3 class="peek-feed-friend__title-third">How it works</h3>
           <div class="peek-feed-friend__steps">
@@ -194,7 +196,10 @@
             </div>
 
           </div>
-          <button class="button button_border-rounded peek-feed-friend__button">FEED A FRIEND NOW</button>
+          <form action="../donate/index.html">
+            <button type="submit" class="button button_border-rounded peek-feed-friend__button">FEED A FRIEND
+              NOW</button>
+          </form>
         </div>
       </div>
     </section>
@@ -290,28 +295,29 @@
           <h1 class="logo__title">PetStory<br>online</h1>
           <img src="../../assets/icons/bamboo.svg" alt="bamboo icon in logo" class="logo__icon">
         </div>
-        <button class="button footer__button">DONATE FOR VOLUNTEERS</button>
-
+        <form action="../donate/index.html" class="footer__button">
+          <button class="button">DONATE FOR VOLUNTEERS</button>
+        </form>
         <div class="footer__social-media layout-vertical">
 
           <div class="layout-horizontal footer__social-media-item">
             <img src="../../assets/icons/facebook.svg" alt="Facebook icon">
-            <p>Facebook</p>
+            <a class="footer__social-media-link" href="https://www.facebook.com/">Facebook</a>
           </div>
 
           <div class="layout-horizontal footer__social-media-item">
             <img src="../../assets/icons/twitter.svg" alt="Twitter icon">
-            <p>Twitter</p>
+            <a class="footer__social-media-link" href="https://www.twitter.com">Twitter</a>
           </div>
 
           <div class="layout-horizontal footer__social-media-item">
             <img src="../../assets/icons/instagram.svg" alt="Instagram icon">
-            <p>Instagram</p>
+            <a class="footer__social-media-link" href="https://www.instagram.com">Instagram</a>
           </div>
 
           <div class="layout-horizontal footer__social-media-item">
             <img src="../../assets/icons/youtube.svg" alt="YouTube icon">
-            <p>YouTube</p>
+            <a class="footer__social-media-link" href="https://www.youtube.com">YouTube</a>
           </div>
 
         </div>
@@ -319,7 +325,9 @@
 
         <nav class="navigation footer__navigation">
           <ul class="navigation__list layout-horizontal footer__navigation-list">
-            <li class="navigation__item"><a href="#" class="link navigation__link">About</a></li>
+            <li class="navigation__item">
+              <p class="link navigation__link header__link navigation__link_active">About</p>
+            </li>
             <li class="navigation__item"><a href="#" class="link navigation__link">Map</a></li>
             <li class="navigation__item"><a href="#" class="link navigation__link">Zoos</a></li>
             <li class="navigation__item"><a href="#" class="link navigation__link">Contact us</a></li>
@@ -328,8 +336,9 @@
 
         <form action="/" class="footer__form subscribe-form">
           <label class="footer__title">Subscribe to our news</label>
-          <input type="text" class="subscribe__input footer__subscribe-input" placeholder="Enter your email">
-          <button class="button footer__subscribe-button" type="submit">Submit</button>
+          <input type="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+            class="subscribe__input footer__subscribe-input" placeholder="Enter your email">
+          <button class="button footer__subscribe-button button_mistake" disabled type="submit">Submit</button>
         </form>
         <div class="footer__captions layout-vertical">
           <p class="footer__caption">Designed by Alisa Samborskaya</p>
