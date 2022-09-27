@@ -41,7 +41,11 @@
 }
 
 .choice-donation__amount-description {
-  font: normal 400 16px/140% 'Roboto';
+  font: 16px/140% 'Roboto' {
+    weight: bold
+  }
+
+
 }
 
 
