@@ -1,6 +1,7 @@
 .watch-favor-animal .wrapper {
   background-image: url('../../assets/images/giant-panda.jpg');
   background-position: bottom;
+  background-size: cover;
   height: 700px;
   position: relative;
 }
@@ -43,4 +44,125 @@
 
 .watch-favor-animal__title {
   gap: 60px;
+}
+
+@media (max-width: $desktop) {
+  .watch-favor-animal .wrapper {
+    height: calc(0.5035 * 100vw);
+    background-size: 120%;
+  }
+
+  .watch-favor-animal__content {
+    width: 400px;
+    top: 42.8px;
+    right: 85.75px;
+  }
+
+  .watch-favor-animal__content::before {
+    width: 367px;
+    height: 367px;
+    top: -54px;
+    left: -58px;
+  }
+
+  .watch-favor-animal__text {
+    font: normal 700 85px/75% 'Roboto';
+  }
+
+  .watch-favor-animal__title {
+    gap: 40px;
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .watch-favor-animal .wrapper {
+    height: calc(0.53 * 100vw);
+  }
+
+  .watch-favor-animal__content {
+    width: 250px;
+    top: 49px;
+    right: 20px;
+  }
+
+  .watch-favor-animal__content::before {
+    width: 237.6px;
+    height: 237.6px;
+    top: -38px;
+    left: -40px;
+  }
+
+  .watch-favor-animal__title {
+    align-items: flex-end;
+  }
+
+  .watch-favor-animal__text {
+    font: normal 700 54.2px/75% 'Roboto';
+  }
+
+  .watch-favor-animal__button {
+    position: absolute;
+    right: 303px;
+    top: 196px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .watch-favor-animal .wrapper {
+    height: calc(0.5297 * 100vw);
+  }
+
+  .watch-favor-animal__content {
+    width: 90vw;
+  }
+
+  .watch-favor-animal__content::before {
+    width: 237.6px;
+    height: 237.6px;
+    top: -38px;
+    left: auto;
+    right: 53px;
+  }
+
+  .watch-favor-animal__text {
+    width: 250px;
+  }
+
+  .watch-favor-animal__button {
+    right: auto;
+    left: -25px;
+    top: 196px;
+  }
+
+}
+
+@media (max-width: $tablet-change-breakpoint) {
+  .watch-favor-animal .wrapper {
+    height: calc(0.5881 * 100vw);
+  }
+
+  .watch-favor-animal__content {
+    width: 100%;
+    top: 40px;
+    right: 11px;
+  }
+
+  .watch-favor-animal__content::before {
+    width: 119.09px;
+    height: 119.09px;
+    top: -18px;
+    left: auto;
+    right: 27px;
+  }
+
+  .watch-favor-animal__text {
+    width: 127px;
+    font: normal 700 28px/75% 'Roboto';
+  }
+
+  .watch-favor-animal__button {
+    right: 0;
+    left: auto;
+    top: 167px;
+  }
 }
