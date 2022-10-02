@@ -1,5 +1,7 @@
 .header {
   background-color: $header-bg-color;
+  position: relative;
+  z-index: 2;
 }
 
 .header__layout {
@@ -18,4 +20,39 @@
 
 .header__designed {
   justify-self: end;
+}
+
+@media (max-width: $desktop) {
+  .header__layout {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .header__layout {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: $header-change-breakpoint) {
+  .header__layout {
+    height: 34px;
+  }
+
+  .header__layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .header__designed {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet) {}
+
+@media (max-width: $tablet-change-breakpoint) {
+  .header__layout {
+    padding: 0 10px;
+  }
 }
