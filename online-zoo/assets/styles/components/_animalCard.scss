@@ -55,6 +55,7 @@
   font: normal 500 16px/140% 'Roboto';
   text-transform: uppercase;
   margin-left: -500px;
+  align-self: end;
 }
 
 .pet-card__areal {
@@ -62,6 +63,7 @@
   justify-self: start;
   font: normal 300 15px/120% 'Roboto';
   margin-left: -500px;
+  align-self: start;
 }
 
 .pet-cart__feed-icon {
@@ -69,3 +71,48 @@
   justify-self: end;
   margin-right: -100px;
 }
+
+@media (max-width: $desktop) {
+  .pet-card {
+    width: 294px;
+    height: 354px;
+  }
+
+  .pet-card__image {
+    width: 293px;
+    height: 293px;
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .pet-card {
+    width: 285px;
+    height: 332px;
+  }
+
+  .pet-card__image {
+    width: 284px;
+    height: 284px;
+  }
+
+  .pet-card__title {
+    font: normal 500 12.5px/140% 'Roboto';
+  }
+
+  .pet-card__areal {
+    font: normal 300 11.7px/120% 'Roboto';
+  }
+}
+
+@media (max-width: $tablet) {
+
+  .pet-card__title {
+    font: normal 500 12.5px/140% 'Roboto';
+  }
+
+  .pet-card__areal {
+    font: normal 300 11.7px/120% 'Roboto';
+  }
+}
+
+@media (max-width: $tablet-change-breakpoint) {}
