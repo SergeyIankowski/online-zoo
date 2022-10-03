@@ -17,7 +17,7 @@
     <div class="wrapper">
       <div class="header__layout header__logo">
         <div class="logo">
-          <h1 class="logo__title">PetStory<br>online</h1>
+          <h1 class="logo__title">PetStory online</h1>
           <img src="../../assets/icons/bamboo.svg" alt="bamboo icon in logo" class="logo__icon">
         </div>
         <nav class="navigation header__navigation">
@@ -29,11 +29,16 @@
             <li class="navigation__item"><a href="#" class="link navigation__link header__link">Zoos</a></li>
             <li class="navigation__item"><a href="../donate/index.html"
                 class="link navigation__link header__link">Donate</a></li>
-            <li class="navigation__item"><a href="#" class="link navigation__link header__link">Contact us</a></li>
+            <li class="navigation__item"><a href="#" class="link navigation__link header__link">Contact&nbsp;us</a></li>
           </ul>
         </nav>
-        <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1" target="_blank"
+        <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" target="_blank"
           class="link header__link header__designed">Designed by ©</a>
+        <div class="hamburger">
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+        </div>
       </div>
     </div>
   </header>
@@ -53,10 +58,11 @@
     <section class="backstage">
       <div class="wrapper">
         <div class="layout-horizontal backstage__layout">
-          <picture class="backstage__img">
-            <source media="(min-width: 1161px)" srcset="../../assets/images/bamboo-cap.jpg">
-            <source media="(min-width: 1001px)" srcset="../../assets/images/bamboo-cap-small.jpg">
-            <img src="../../assets/images/bamboo-cap-small.jpg" alt="old chinese man with bamboo cap">
+          <picture>
+            <source media="(min-width: 1151px)" srcset="../../assets/images/bamboo-cap.jpg">
+            <source media="(max-width: 1150px)" srcset="../../assets/images/bamboo-cap-small.jpg">
+            <img class="backstage__img" src="../../assets/images/bamboo-cap-small.jpg"
+              alt="old chinese man with bamboo cap">
           </picture>
           <div class="backstage__column layout-vertical">
             <h3 class="backstage__title">The Backstage of the Wilderness World.</h3>
@@ -71,7 +77,6 @@
           </div>
         </div>
       </div>
-      <img src="../../assets/images/flower-foto1.png" alt="flowers" class="backstage__bg-img">
     </section>
     <section class="animal-cards">
       <div class="wrapper">
@@ -173,7 +178,11 @@
             </div>
 
             <div class="peek-feed-friend__steps-arrow-container">
-              <img src="../../assets/icons/arrow-step.svg" alt="right arrow icon" class="peek-feed-friend__steps-arrow">
+              <picture>
+                <source media="(max-width: 999px)" srcset="../../assets/icons/arrow-step-small.svg">
+                <img src="../../assets/icons/arrow-step.svg" alt="right arrow icon"
+                  class="peek-feed-friend__steps-arrow">
+              </picture>
             </div>
 
             <div class="peek-feed-friend__step layout-vertical">
@@ -184,7 +193,11 @@
             </div>
 
             <div class="peek-feed-friend__steps-arrow-container">
-              <img src="../../assets/icons/arrow-step.svg" alt="right arrow icon" class="peek-feed-friend__steps-arrow">
+              <picture>
+                <source media="(max-width: 999px)" srcset="../../assets/icons/arrow-step-small.svg">
+                <img src="../../assets/icons/arrow-step.svg" alt="right arrow icon"
+                  class="peek-feed-friend__steps-arrow">
+              </picture>
             </div>
 
             <div class="peek-feed-friend__step layout-vertical">
@@ -280,7 +293,7 @@
 
         </div>
         <div class="testimonials__progress-bar-container">
-          <div class="testimonials__progress-bar"></div>
+          <div type="range" class="testimonials__progress-bar"></div>
         </div>
         <button class="button testimonials__button">LEAVE FEEDBACK</button>
       </div>
@@ -292,12 +305,13 @@
       <div class="footer__layout">
 
         <div class="logo footer__logo">
-          <h1 class="logo__title">PetStory<br>online</h1>
+          <h1 class="logo__title">PetStory online</h1>
           <img src="../../assets/icons/bamboo.svg" alt="bamboo icon in logo" class="logo__icon">
         </div>
         <form action="../donate/index.html" class="footer__button">
           <button class="button">DONATE FOR VOLUNTEERS</button>
         </form>
+
         <div class="footer__social-media layout-vertical">
 
           <div class="layout-horizontal footer__social-media-item">
@@ -330,7 +344,7 @@
             </li>
             <li class="navigation__item"><a href="#" class="link navigation__link">Map</a></li>
             <li class="navigation__item"><a href="#" class="link navigation__link">Zoos</a></li>
-            <li class="navigation__item"><a href="#" class="link navigation__link">Contact us</a></li>
+            <li class="navigation__item"><a href="#" class="link navigation__link">Contact&nbsp;us</a></li>
           </ul>
         </nav>
 
