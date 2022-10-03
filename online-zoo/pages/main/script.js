@@ -1,5 +1,5 @@
-const LOGO = document.querySelector('.logo');
-LOGO.addEventListener('click', () => window.open('../main/index.html', '_self').focus());
+const LOGOS = document.querySelectorAll('.logo');
+LOGOS.forEach(logo => logo.addEventListener('click', () => window.open('../main/index.html', '_self').focus()));
 
 const FOOTER_BUTTON = document.querySelector('.footer__subscribe-button');
 const FOOTER_INPUT = document.querySelector('.footer__subscribe-input');
@@ -12,4 +12,18 @@ FOOTER_INPUT.oninput = (e) => {
     FOOTER_BUTTON.classList.add('button_mistake');
   }
 }
+
+let width640 = window.matchMedia('(max-width: 999px)');
+const CARDS = document.querySelectorAll('.pet-card');
+const deleteExtraCards = (x) => {
+  if (x.matches) {
+    CARDS[CARDS.length - 1].style.display = 'none';
+    CARDS[CARDS.length - 2].style.display = 'none';
+  } else {
+    CARDS[CARDS.length - 1].style.display = 'flex';
+    CARDS[CARDS.length - 2].style.display = 'flex';
+  }
+}
+deleteExtraCards(width640);
+width640.addEventListener('change', () => deleteExtraCards(width640));
 

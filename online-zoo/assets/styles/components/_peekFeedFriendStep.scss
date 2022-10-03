@@ -21,3 +21,9 @@
   font: normal 400 16px/140% 'Roboto';
   width: 168px;
 }
+
+@media (max-width: $tablet) {
+  .peek-feed-friend__step {
+    gap: 10px;
+  }
+}

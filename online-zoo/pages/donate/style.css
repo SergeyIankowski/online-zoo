@@ -500,6 +500,11 @@ table {
   margin: 0 auto;
 }
 
+@media (max-width: 1599px) {
+  .wrapper {
+    width: 100%;
+  }
+}
 .button {
   font: normal 500 16px/140% "Roboto";
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -552,8 +557,56 @@ table {
   cursor: default;
 }
 
+@media (max-width: 1599px) {
+  .navigation__list {
+    gap: 48px;
+  }
+}
+@media (max-width: 999px) {
+  .navigation__list {
+    gap: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .navigation {
+    display: none;
+  }
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger__line {
+  height: 4px;
+  width: 36px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: flex;
+    justify-self: end;
+  }
+}
+@media (max-width: 641px) {
+  .hamburger {
+    gap: 2;
+  }
+
+  .hamburger__line {
+    height: 2px;
+    width: 18px;
+    border-radius: 2px;
+  }
+}
 .header {
   background-color: #000000;
+  position: relative;
+  z-index: 2;
 }
 
 .header__layout {
@@ -574,6 +627,35 @@ table {
   justify-self: end;
 }
 
+@media (max-width: 1599px) {
+  .header__layout {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 999px) {
+  .header__layout {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 700px) {
+  .header__layout {
+    height: 34px;
+  }
+
+  .header__layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .header__designed {
+    display: none;
+  }
+}
+@media (max-width: 564px) {
+  .header__layout {
+    padding: 0 10px;
+  }
+}
 .logo {
   position: relative;
   width: 82px;
@@ -602,6 +684,25 @@ table {
   top: 23px;
 }
 
+@media (max-width: 999px) {
+  .logo {
+    border: 0;
+    width: 47px;
+    height: 29px;
+  }
+
+  .logo__title {
+    position: static;
+    font: normal 400 12px/120% "Roboto";
+  }
+
+  .logo__icon {
+    left: 5.5px;
+    top: 14px;
+    width: 6.78px;
+    height: 11.74px;
+  }
+}
 .panda-bg__layout {
   height: 386px;
   background-image: url("../../assets/images/giant-panda.jpg");
@@ -610,6 +711,30 @@ table {
   background-position: left;
 }
 
+@media (max-width: 1599px) {
+  .panda-bg__layout {
+    height: 390px;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: left -173px top -194px;
+  }
+}
+@media (max-width: 999px) {
+  .panda-bg__layout {
+    height: 335px;
+    background-size: 210%;
+    background-repeat: no-repeat;
+    background-position: left -260px top -160px;
+  }
+}
+@media (max-width: 639px) {
+  .panda-bg__layout {
+    height: 187px;
+    background-size: 232%;
+    background-repeat: no-repeat;
+    background-position: left -140px top -88px;
+  }
+}
 .help {
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
@@ -643,6 +768,71 @@ table {
   align-items: flex-start;
 }
 
+@media (max-width: 1599px) {
+  .help__layout {
+    padding: 40px 30px 30px;
+  }
+
+  .help__title {
+    padding-right: 142px;
+    margin-bottom: 30px;
+  }
+
+  .help__subtitle {
+    margin-bottom: 40px;
+  }
+
+  .help__board {
+    padding: 20px 44px 47px 46px;
+  }
+}
+@media (max-width: 999px) {
+  .help__layout {
+    padding: 30px 20px 46px;
+  }
+
+  .help__title {
+    font: normal 400 24px/120% "Roboto";
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .help__description {
+    margin-bottom: 30px;
+  }
+
+  .help__subtitle {
+    margin-bottom: 28px;
+  }
+
+  .help__board {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 639px) {
+  .help__layout {
+    padding: 30px 10px 19px;
+  }
+
+  .help__title {
+    font: normal 400 24px/120% "Roboto";
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .help__description {
+    margin-bottom: 26px;
+  }
+
+  .help__subtitle {
+    font: normal 400 24px/120% "Roboto";
+    margin-bottom: 28px;
+  }
+
+  .help__board {
+    padding: 22px 0 20px;
+  }
+}
 .choice-donation__title {
   font: normal 400 48px/120% "Roboto";
   color: #FE9013;
@@ -698,9 +888,9 @@ table {
   position: relative;
   gap: 6px;
 }
-.choice-donation-form .fix-amount-bar__bg-line {
+.choice-donation-form .choice-donation-form__bg-line {
   position: absolute;
-  top: 20%;
+  top: 12.5%;
   left: 3%;
   height: 2px;
   width: 94%;
@@ -865,6 +1055,254 @@ table {
   color: #FE9013;
 }
 
+@media (max-width: 1599px) {
+  .choice-donation__title {
+    margin-bottom: 10px;
+    margin-left: 185px;
+  }
+
+  .choice-donation-form__title {
+    padding-left: 18px;
+  }
+
+  .choice-donation__amount {
+    padding-top: 107px;
+    padding-left: 149px;
+    gap: 10px;
+  }
+
+  .choice-donation__amount-description {
+    font: normal 16px/140% "Roboto";
+  }
+
+  .choice-donation-form {
+    width: 100%;
+    position: relative;
+    gap: 6px;
+  }
+  .choice-donation-form .choice-donation-form__bg-line {
+    position: absolute;
+    top: 12.5%;
+    left: 5%;
+    height: 2px;
+    width: 90%;
+    background-color: #72828e;
+    z-index: 1;
+  }
+
+  .choice-donation-form__bar {
+    width: 95%;
+  }
+
+  .choice-donation-form__markers {
+    padding: 0;
+  }
+
+  .choice-donation-form__marker_5000,
+.choice-donation-form__value_5000 {
+    display: none;
+  }
+}
+@media (max-width: 999px) {
+  .choice-donation__title {
+    align-self: center;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .choice-donation__description {
+    text-align: center;
+  }
+
+  .choice-donation__overview {
+    margin-bottom: 42px;
+  }
+
+  .choice-donation-form__title {
+    padding-left: 10px;
+    padding-bottom: 0;
+  }
+
+  .choice-donation__amount {
+    padding-top: 97px;
+    padding-left: 27px;
+    gap: 10px;
+  }
+
+  .choice-donation__multiply {
+    padding-top: 120px;
+  }
+
+  .choice-donation-form__pet-icon {
+    margin-top: -10px;
+  }
+
+  .choice-donation__amount-description {
+    font: normal 16px/140% "Roboto";
+  }
+
+  .choice-donation-form .choice-donation-form__bg-line {
+    top: 10.5%;
+    left: 7%;
+    width: 87%;
+  }
+
+  .choice-donation-form__bar {
+    width: 100%;
+  }
+
+  .choice-donation-form__markers {
+    padding: 0 20px;
+  }
+
+  .choice-donation-form__values {
+    margin-bottom: 44px;
+  }
+  .choice-donation-form__values :nth-child(n+6) {
+    padding-right: 0;
+  }
+
+  .another-amount {
+    position: relative;
+  }
+  .another-amount .dollar-icon {
+    position: absolute;
+    top: 19%;
+    right: 5.5%;
+  }
+
+  .another-amount__input {
+    width: 180px;
+    height: 42px;
+    margin-bottom: 25px;
+  }
+  .another-amount__input::placeholder {
+    font: normal 400 16px/140% "Roboto";
+    padding-left: 4px;
+  }
+
+  .choice-donation-form__marker_2000,
+.choice-donation-form__value_2000,
+.choice-donation-form__marker_1000,
+.choice-donation-form__value_1000 {
+    display: none;
+  }
+}
+@media (max-width: 639px) {
+  .choice-donation__title {
+    font: normal 400 24px/120% "Roboto";
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .choice-donation__description {
+    font: normal 400 16px/133% "Roboto";
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .choice-donation__overview {
+    justify-content: space-between;
+    margin-bottom: 5px;
+    width: 300px;
+  }
+
+  .choice-donation-form__title {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .choice-donation__amount {
+    padding-top: 30px;
+    padding-left: 0;
+    gap: 10px;
+  }
+
+  .choice-donation__multiply {
+    width: 7.89px;
+    height: 7.89px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    align-self: center;
+  }
+
+  .choice-donation-form__pet-icon {
+    height: 138.72px;
+    margin-top: -29px;
+  }
+
+  .choice-donation__amount-value {
+    font: normal 500 40.6px/80% "Roboto";
+  }
+
+  .choice-donation__amount-description {
+    font: normal 9px/140% "Roboto";
+  }
+
+  .choice-donation-form .choice-donation-form__bg-line {
+    top: 10.7%;
+    left: 6%;
+    width: 87%;
+  }
+
+  .choice-donation-form__bar {
+    width: 100%;
+  }
+
+  .choice-donation-form__markers {
+    padding: 0 10px;
+    margin-bottom: 7px;
+    height: 13.5px;
+  }
+
+  .choice-donation-form__values {
+    margin-bottom: 20px;
+  }
+
+  .choice-donation-form__value {
+    font: normal 500 13px/140% "Roboto";
+  }
+
+  .choice-donation-form__marker {
+    width: 20px;
+    height: 20px;
+  }
+
+  .another-amount {
+    position: relative;
+  }
+  .another-amount .dollar-icon {
+    position: absolute;
+    top: 19%;
+    right: 5.5%;
+  }
+
+  .another-amount__input {
+    width: 180px;
+    height: 42px;
+    margin-bottom: 20px;
+  }
+  .another-amount__input::placeholder {
+    font: normal 400 15.9px/140% "Roboto";
+    padding-left: 4px;
+  }
+
+  .time-period {
+    margin-bottom: 20px;
+  }
+
+  .another-amount__caption {
+    font: normal 400 15.9px/140% "Roboto";
+  }
+
+  .choice-donation-form__marker_2000,
+.choice-donation-form__value_2000,
+.choice-donation-form__marker_1000,
+.choice-donation-form__value_1000 {
+    display: none;
+  }
+}
 .footer {
   background-color: #000000;
   height: 443px;
@@ -875,7 +1313,7 @@ table {
   padding: 40px 220px 50px;
   width: inherit;
   display: grid;
-  grid-template-areas: "a . b" "c . ." "d e f";
+  grid-template-areas: "a b b" "c . ." "d e f";
 }
 
 .footer__form {
@@ -968,6 +1406,173 @@ table {
 .footer__caption {
   font: normal 100 16px/130% "Roboto";
   color: #ffffff;
+}
+
+@media (max-width: 1599px) {
+  .footer__layout {
+    padding: 40px 30px 50px 33px;
+    grid-template-areas: "a a b b" "c c . ." "d e e f";
+  }
+
+  .footer__navigation {
+    grid-area: e;
+    align-self: end;
+    justify-self: end;
+    margin-right: 26px;
+  }
+
+  .footer__form {
+    grid-area: b;
+    margin-right: 33px;
+  }
+}
+@media (max-width: 999px) {
+  .footer {
+    height: 282px;
+  }
+
+  .footer__layout {
+    height: 282px;
+    padding: 12px 20px;
+    grid-template-areas: "a a d d" "c c d d" "c c d d" "e e f f";
+  }
+
+  .footer__logo {
+    grid-area: a;
+    width: 82px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+  }
+  .footer__logo .logo__title {
+    position: absolute;
+    left: 4.75px;
+    top: 3.55px;
+    font: normal 400 19px/120% "Roboto";
+    color: #ffffff;
+    text-align: center;
+    z-index: 1;
+  }
+  .footer__logo .logo__icon {
+    position: absolute;
+    z-index: 2;
+    left: 10.5px;
+    top: 23px;
+  }
+
+  .footer__form {
+    display: none;
+  }
+
+  .footer__button {
+    grid-area: c;
+    margin-top: 3px;
+  }
+
+  .footer__social-media {
+    grid-area: d;
+    gap: 20px;
+    align-self: start;
+    justify-self: end;
+  }
+  .footer__social-media .footer__social-media-link {
+    display: none;
+  }
+
+  .footer__navigation {
+    display: block;
+    grid-area: e;
+    justify-self: start;
+  }
+
+  .footer__navigation-list {
+    gap: 37px;
+  }
+
+  .footer__captions {
+    grid-area: f;
+  }
+}
+@media (max-width: 639px) {
+  .footer {
+    height: 334px;
+  }
+
+  .footer__layout {
+    height: 334px;
+    padding: 17px 0 20px;
+    grid-template-areas: "a a a a" "d d d d" "c c c c" "f f f f" "e e e e";
+  }
+
+  .footer__logo {
+    grid-area: a;
+    width: 180px;
+    height: 33px;
+    border: 0;
+    justify-self: center;
+  }
+  .footer__logo .logo__title {
+    position: relative;
+    font: normal 400 19px/120% "Roboto";
+    color: #ffffff;
+    z-index: 1;
+  }
+  .footer__logo .logo__icon {
+    position: absolute;
+    z-index: 2;
+    left: 106px;
+    top: 5px;
+    transform: scale(1.8);
+  }
+
+  .footer__form {
+    display: none;
+  }
+
+  .footer__button {
+    grid-area: c;
+    text-align: center;
+    justify-self: center;
+    margin-top: 12px;
+  }
+
+  .footer__social-media {
+    grid-area: d;
+    flex-direction: row;
+    gap: 30px;
+    justify-self: center;
+  }
+  .footer__social-media .footer__social-media-link {
+    display: none;
+  }
+
+  .footer__navigation {
+    display: block;
+    grid-area: e;
+    justify-self: center;
+    margin-right: 0;
+  }
+
+  .footer__navigation-list {
+    gap: 30px;
+  }
+
+  .footer__captions {
+    grid-area: f;
+    align-self: center;
+    padding-right: 13px;
+    justify-self: center;
+    gap: 13px;
+  }
+
+  .footer__caption {
+    font: normal 100 15px/120% "Roboto";
+  }
+}
+@media (max-width: 400px) {
+  .footer__captions {
+    justify-self: end;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

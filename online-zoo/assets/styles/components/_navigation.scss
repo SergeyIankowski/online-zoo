@@ -5,7 +5,22 @@
 .navigation__link_active {
   color: $link-hover;
   cursor: default;
-  // &:hover {
-  //   color: $link-active;
-  // }
+}
+
+@media (max-width: $desktop) {
+  .navigation__list {
+    gap: 48px;
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .navigation__list {
+    gap: 20px;
+  }
+}
+
+@media (max-width: $header-change-breakpoint) {
+  .navigation {
+    display: none;
+  }
 }

@@ -11,7 +11,6 @@
   position: relative;
   gap: 20px 30px;
   padding: 0 220px;
-  margin-top: 176px;
 }
 
 .animal-cards__button-left-arrow {
@@ -32,7 +31,7 @@
 
 .animal-cards__img-left {
   position: absolute;
-  left: 0;
+  left: -588px;
   bottom: 0;
 }
 
@@ -41,3 +40,128 @@
   right: 0;
   bottom: 0;
 }
+
+@media (max-width: $desktop) {
+  .animal-cards {
+    padding-bottom: 140px;
+    position: relative;
+  }
+
+  .animal-cards__grid-layout {
+    position: relative;
+    gap: 93px 30px;
+    padding: 0 30px;
+  }
+
+  .animal-cards__button-left-arrow {
+    position: absolute;
+    top: 369px;
+    left: 35%;
+  }
+
+  .animal-cards__button-right-arrow {
+    position: absolute;
+    top: 369px;
+    right: 35%;
+  }
+
+  .animal-cards__img-left {
+    position: absolute;
+    left: -192px;
+    bottom: 0;
+    height: 202px;
+  }
+
+  .animal-cards__img-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 180px;
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .animal-cards {
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .animal-cards__layout {
+    gap: 60px;
+  }
+
+  .animal-cards__grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px 30px;
+    padding: 0 30px;
+  }
+
+  .animal-cards__button-left-arrow {
+    position: absolute;
+    top: 340px;
+    left: 38%;
+  }
+
+  .animal-cards__button-right-arrow {
+    position: absolute;
+    top: 340px;
+    right: 38%;
+  }
+
+  .animal-cards__img-left {
+    position: absolute;
+    left: -252px;
+    bottom: 0;
+    height: 202px;
+  }
+
+  .animal-cards__img-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 130px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .animal-cards {
+    padding-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .animal-cards__layout {
+    gap: 20px;
+  }
+
+  .animal-cards__grid-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 25px 0 10px;
+  }
+
+  .animal-cards__button-left-arrow {
+    display: none;
+  }
+
+  .animal-cards__button-right-arrow {
+    display: none;
+  }
+
+  .animal-cards__img-left {
+    position: absolute;
+    left: -80px;
+    bottom: 0;
+    height: 72px;
+  }
+
+  .animal-cards__img-right {
+    position: absolute;
+    right: -20px;
+    bottom: -5px;
+    height: 71px;
+  }
+}
+
+@media (max-width: $tablet-change-breakpoint) {}

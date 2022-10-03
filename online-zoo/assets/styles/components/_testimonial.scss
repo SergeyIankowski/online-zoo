@@ -1,7 +1,7 @@
 $testimonial-border: 2px;
 
 .testimonial {
-  width: 268px;
+  min-width: 268px;
   height: 391px;
   padding: 12px 15px 15px;
   background: #F1F3F2;
@@ -59,7 +59,11 @@ $testimonial-border: 2px;
 .testimonial__description {
   font: normal 300 15px/120% 'Roboto';
   color: #767474;
-  overflow: hidden;
+  overflow: scroll;
+}
+
+.testimonial__description::-webkit-scrollbar {
+  display: none;
 }
 
 .testimonials__bg-photo {
@@ -68,3 +72,29 @@ $testimonial-border: 2px;
   right: 0;
   transform: rotate(30.2deg);
 }
+
+@media (max-width: $desktop) {
+
+  .testimonial {
+    min-width: 293px;
+    height: 391px;
+    padding: 12px 15px 15px;
+    background: #F1F3F2;
+    background-clip: padding-box;
+  }
+
+}
+
+@media (max-width: $small-desktop) {
+  .testimonial {
+    min-width: 293px;
+    height: 109px;
+    padding: 12px 15px 13px 12px;
+    background: #F1F3F2;
+    background-clip: padding-box;
+  }
+}
+
+@media (max-width: $tablet) {}
+
+@media (max-width: $tablet-change-breakpoint) {}

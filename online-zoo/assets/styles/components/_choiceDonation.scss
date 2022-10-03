@@ -48,7 +48,6 @@
 
 }
 
-
 .choice-donation-form__fix-amount-radio {
   display: none;
 }
@@ -58,9 +57,9 @@
   position: relative;
   gap: 6px;
 
-  .fix-amount-bar__bg-line {
+  .choice-donation-form__bg-line {
     position: absolute;
-    top: 20%;
+    top: 12.5%;
     left: 3%;
     height: 2px;
     width: 94%;
@@ -175,51 +174,6 @@
   font: normal 400 16px/140% 'Roboto';
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .time-period__radio #btn-5000:checked~.choice-donation-form__bar {
   .choice-donation-form__marker_5000 {
     background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
@@ -299,3 +253,372 @@
     color: #FE9013;
   }
 }
+
+@media (max-width: $desktop) {
+  .choice-donation__title {
+    // font: normal 400 48px/120% 'Roboto';
+    // color: $text-color-colored;
+    margin-bottom: 10px;
+    margin-left: 185px;
+  }
+
+  .choice-donation__description {
+    // font: normal 400 24px/120% 'Roboto';
+    // color: #333B41;
+    // margin-bottom: 60px;
+  }
+
+  .choice-donation__overview {
+    // align-items: flex-start;
+    // margin-bottom: 48px;
+  }
+
+  .choice-donation-form__title {
+    // font: normal 400 16px/140% 'Roboto';
+    // align-self: flex-start;
+    // padding-bottom: 10px;
+    padding-left: 18px;
+  }
+
+  .choice-donation__amount {
+    padding-top: 107px;
+    padding-left: 149px;
+    gap: 10px;
+  }
+
+  .choice-donation__multiply {
+    // padding-top: 130px;
+    // padding-left: 12px;
+    // padding-right: 65px;
+  }
+
+
+  .choice-donation__amount-value {
+    // font: normal 500 72px/80% 'Roboto';
+  }
+
+  .choice-donation__amount-description {
+    font: normal 16px/140% 'Roboto'
+  }
+
+  .choice-donation-form {
+    width: 100%;
+    position: relative;
+    gap: 6px;
+
+    .choice-donation-form__bg-line {
+      position: absolute;
+      top: 12.5%;
+      left: 5%;
+      height: 2px;
+      width: 90%;
+      background-color: #72828e;
+      z-index: 1;
+    }
+  }
+
+  .choice-donation-form__bar {
+    width: 95%;
+  }
+
+  .choice-donation-form__markers {
+    padding: 0;
+  }
+
+  .choice-donation-form__marker_5000,
+  .choice-donation-form__value_5000 {
+    display: none;
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .choice-donation__title {
+    // font: normal 400 48px/120% 'Roboto';
+    // color: $text-color-colored;
+    align-self: center;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .choice-donation__description {
+    // font: normal 400 24px/120% 'Roboto';
+    // color: #333B41;
+    // margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .choice-donation__overview {
+    // align-items: flex-start;
+    margin-bottom: 42px;
+  }
+
+  .choice-donation-form__title {
+    // font: normal 400 16px/140% 'Roboto';
+    // align-self: flex-start;
+    // padding-bottom: 10px;
+    padding-left: 10px;
+    padding-bottom: 0;
+  }
+
+  .choice-donation__amount {
+    padding-top: 97px;
+    padding-left: 27px;
+    gap: 10px;
+  }
+
+  .choice-donation__multiply {
+    padding-top: 120px;
+    // padding-left: 12px;
+    // padding-right: 65px;
+  }
+
+  .choice-donation-form__pet-icon {
+    margin-top: -10px;
+  }
+
+  .choice-donation__amount-value {
+    // font: normal 500 72px/80% 'Roboto';
+  }
+
+  .choice-donation__amount-description {
+    font: normal 16px/140% 'Roboto'
+  }
+
+  .choice-donation-form {
+    // width: 100%;
+    // position: relative;
+    // gap: 6px;
+
+    .choice-donation-form__bg-line {
+      //   position: absolute;
+      top: 10.5%;
+      left: 7%;
+      //   height: 2px;
+      width: 87%;
+      //   background-color: #72828e;
+      //   z-index: 1;
+    }
+  }
+
+  .choice-donation-form__bar {
+    width: 100%;
+  }
+
+  .choice-donation-form__markers {
+    padding: 0 20px;
+    // justify-content: space-between;
+    // margin-bottom: 12px;
+    // height: 27px;
+    // background: #404950;
+    // width: 100%;
+  }
+
+  .choice-donation-form__values {
+    // justify-content: space-between;
+    margin-bottom: 44px;
+
+    & :nth-child(n+6) {
+      padding-right: 0;
+    }
+  }
+
+  .choice-donation-form__marker {
+    // position: relative;
+    // z-index: 2;
+    // width: 40px;
+    // height: 40px;
+    // border-radius: 50%;
+    // border: 0;
+    // cursor: pointer;
+    // background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%);
+  }
+
+  .another-amount {
+    position: relative;
+
+    & .dollar-icon {
+      position: absolute;
+      top: 19%;
+      right: 5.5%;
+    }
+  }
+
+  .another-amount__input {
+    // border: 1px solid #929699;
+    // border-radius: 2px;
+    // background-color: rgba($color: #000000, $alpha: 0);
+    // font: normal 400 16px/140% 'Roboto';
+    width: 180px;
+    height: 42px;
+    margin-bottom: 25px;
+
+    &::placeholder {
+      font: normal 400 16px/140% 'Roboto';
+      padding-left: 4px;
+    }
+
+    // &::-webkit-outer-spin-button,
+    // &::-webkit-inner-spin-button {
+    //   -webkit-appearance: none;
+    //   margin: 0;
+    // }
+  }
+
+  .choice-donation-form__marker_2000,
+  .choice-donation-form__value_2000,
+  .choice-donation-form__marker_1000,
+  .choice-donation-form__value_1000 {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet) {
+  .choice-donation__title {
+    font: normal 400 24px/120% 'Roboto';
+    // color: $text-color-colored;
+    // align-self: center;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .choice-donation__description {
+    font: normal 400 16px/133% 'Roboto';
+    // color: #333B41;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .choice-donation__overview {
+    justify-content: space-between;
+    margin-bottom: 5px;
+    width: 300px;
+  }
+
+  .choice-donation-form__title {
+    // font: normal 400 16px/140% 'Roboto';
+    // align-self: flex-start;
+    // padding-bottom: 10px;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .choice-donation__amount {
+    padding-top: 30px;
+    padding-left: 0;
+    gap: 10px;
+  }
+
+  .choice-donation__multiply {
+    width: 7.89px;
+    height: 7.89px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    align-self: center;
+  }
+
+  .choice-donation-form__pet-icon {
+    // width: 151.4px;
+    height: 138.72px;
+    margin-top: -29px;
+  }
+
+  .choice-donation__amount-value {
+    font: normal 500 40.6px/80% 'Roboto';
+  }
+
+  .choice-donation__amount-description {
+    font: normal 9px/140% 'Roboto'
+  }
+
+  .choice-donation-form {
+    // width: 100%;
+    // position: relative;
+    // gap: 6px;
+
+    .choice-donation-form__bg-line {
+      //   position: absolute;
+      top: 10.7%;
+      left: 6%;
+      //   height: 2px;
+      width: 87%;
+      //   background-color: #72828e;
+      //   z-index: 1;
+    }
+  }
+
+  .choice-donation-form__bar {
+    width: 100%;
+  }
+
+  .choice-donation-form__markers {
+    padding: 0 10px;
+    // justify-content: space-between;
+    margin-bottom: 7px;
+    height: 13.5px;
+    // background: #404950;
+    // width: 100%;
+  }
+
+  .choice-donation-form__values {
+    // justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .choice-donation-form__value {
+    font: normal 500 13px/140% 'Roboto';
+  }
+
+  .choice-donation-form__marker {
+    // position: relative;
+    // z-index: 2;
+    width: 20px;
+    height: 20px;
+    // border-radius: 50%;
+    // border: 0;
+    // cursor: pointer;
+    // background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%);
+  }
+
+  .another-amount {
+    position: relative;
+
+    & .dollar-icon {
+      position: absolute;
+      top: 19%;
+      right: 5.5%;
+    }
+  }
+
+  .another-amount__input {
+    // border: 1px solid #929699;
+    // border-radius: 2px;
+    // background-color: rgba($color: #000000, $alpha: 0);
+    // font: normal 400 16px/140% 'Roboto';
+    width: 180px;
+    height: 42px;
+    margin-bottom: 20px;
+
+    &::placeholder {
+      font: normal 400 15.9px/140% 'Roboto';
+      padding-left: 4px;
+    }
+  }
+
+  .time-period {
+    margin-bottom: 20px;
+  }
+
+  .another-amount__caption {
+    font: normal 400 15.9px/140% 'Roboto';
+  }
+
+  .choice-donation-form__marker_2000,
+  .choice-donation-form__value_2000,
+  .choice-donation-form__marker_1000,
+  .choice-donation-form__value_1000 {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-change-breakpoint) {}

@@ -27,3 +27,27 @@
   left: 10.5px;
   top: 23px;
 }
+
+@media (max-width: $small-desktop) {
+  .logo {
+    border: 0;
+    width: 47px;
+    height: 29px;
+  }
+
+  .logo__title {
+    position: static;
+    font: normal 400 12px/120% 'Roboto';
+  }
+
+  .logo__icon {
+    left: 5.5px;
+    top: 14px;
+    width: 6.78px;
+    height: 11.74px;
+  }
+}
+
+@media (max-width: $tablet) {}
+
+@media (max-width: $tablet-change-breakpoint) {}
