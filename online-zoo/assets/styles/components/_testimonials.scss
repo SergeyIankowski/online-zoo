@@ -36,6 +36,8 @@ $progress-bar-border: 0.5px;
   background: #F5F7F6;
   background-clip: padding-box;
 
+  cursor: pointer;
+
   &::before {
     content: '';
     position: absolute;
@@ -48,10 +50,6 @@ $progress-bar-border: 0.5px;
     border-radius: inherit;
     background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
   }
-}
-
-.testimonials__progress-bar-container {
-  cursor: pointer;
 }
 
 .testimonials__progress-bar {
@@ -68,3 +66,97 @@ $progress-bar-border: 0.5px;
 .testimonials__button {
   align-self: flex-start;
 }
+
+@media (max-width: $desktop) {
+  .testimonials {
+    padding: 100px 0 140px;
+    background-size: 328px;
+    background-position: right -130px bottom -88px;
+  }
+
+  .testimonials__layout {
+    padding: 0 30px;
+  }
+
+  .testimonials__title {
+    margin-bottom: 25px;
+  }
+
+  .testimonials__container {
+    width: 940px;
+    overflow: scroll;
+    justify-content: flex-start;
+  }
+
+  .testimonials__container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonials__progress-bar-container {
+    width: 380px;
+    margin-bottom: 52px;
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .testimonials {
+    padding: 60px 0 80px;
+    background-size: 200px;
+    background-position: right -85px bottom -66px;
+  }
+
+  .testimonials__layout {
+    padding: 0 20px;
+  }
+
+  .testimonials__title {
+    font: normal 400 36px/130% 'Roboto';
+    margin-bottom: 30px;
+  }
+
+  .testimonials__container {
+    width: 100%;
+    height: 360px;
+
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 37px;
+  }
+
+  .testimonials__progress-bar-container {
+    display: none;
+  }
+
+  .testimonials__button {
+    width: 240px;
+    align-self: center;
+  }
+}
+
+@media (max-width: $tablet) {
+  .testimonials {
+    padding: 30px 0 60px;
+    background-image: url('../../assets/images/leav-foto-small.png');
+    background-size: 94px;
+    background-position: right -45px bottom -30px;
+  }
+
+  .testimonials__layout {
+    padding: 0 10px;
+  }
+
+  .testimonials__title {
+    font: normal 400 24px/120% 'Roboto';
+    margin-bottom: 20px;
+  }
+
+  .testimonials__container {
+    // width: 100%;
+    // height: 360px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: $tablet-change-breakpoint) {}
