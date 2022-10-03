@@ -1898,7 +1898,7 @@ table {
 
 @media (max-width: 1599px) {
   .footer__layout {
-    padding: 40px 18px 50px 43px;
+    padding: 40px 30px 50px 33px;
     grid-template-areas: "a a b b" "c c . ." "d e e f";
   }
 
@@ -2019,7 +2019,6 @@ table {
 
   .footer__button {
     grid-area: c;
-    width: 100%;
     text-align: center;
     justify-self: center;
     margin-top: 12px;
