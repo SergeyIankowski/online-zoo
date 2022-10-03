@@ -31,3 +31,102 @@
   padding: 40px 92px 61px;
   align-items: flex-start;
 }
+
+@media (max-width: $desktop) {
+  .help__layout {
+    padding: 40px 30px 30px;
+  }
+
+  .help__title {
+    // font: normal 400 36px/130% 'Roboto';
+    // color: $text-color-light;
+    padding-right: 142px;
+    margin-bottom: 30px;
+  }
+
+  .help__description {
+    // font: normal 500 16px/140% 'Roboto';
+    // color: $text-color-light;
+    // margin-bottom: 45px;
+  }
+
+  .help__subtitle {
+    // font: normal 400 36px/130% 'Roboto';
+    // color: $text-color-colored;
+    margin-bottom: 40px;
+  }
+
+  .help__board {
+    // background: rgba(255, 255, 255, 0.52);
+    // border-radius: 20px;
+    padding: 20px 44px 47px 46px;
+    // align-items: flex-start;
+  }
+
+}
+
+@media (max-width: $small-desktop) {
+  .help__layout {
+    padding: 30px 20px 46px;
+  }
+
+  .help__title {
+    font: normal 400 24px/120% 'Roboto';
+    // color: $text-color-light;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .help__description {
+    // font: normal 500 16px/140% 'Roboto';
+    // color: $text-color-light;
+    margin-bottom: 30px;
+  }
+
+  .help__subtitle {
+    // font: normal 400 36px/130% 'Roboto';
+    // color: $text-color-colored;
+    margin-bottom: 28px;
+  }
+
+  .help__board {
+    // background: rgba(255, 255, 255, 0.52);
+    // border-radius: 20px;
+    padding: 30px 0;
+    // align-items: flex-start;
+  }
+}
+
+@media (max-width: $tablet) {
+  .help__layout {
+    padding: 30px 10px 19px;
+  }
+
+  .help__title {
+    font: normal 400 24px/120% 'Roboto';
+    // color: $text-color-light;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .help__description {
+    // font: normal 500 16px/140% 'Roboto';
+    // color: $text-color-light;
+    margin-bottom: 26px;
+  }
+
+  .help__subtitle {
+    font: normal 400 24px/120% 'Roboto';
+    // color: $text-color-colored;
+    margin-bottom: 28px;
+  }
+
+  .help__board {
+    // background: rgba(255, 255, 255, 0.52);
+    // border-radius: 20px;
+    padding: 22px 0 20px;
+    // align-items: flex-start;
+  }
+}
+
+@media (max-width: $tablet-change-breakpoint) {}

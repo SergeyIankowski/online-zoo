@@ -5,3 +5,32 @@
   background-repeat: no-repeat;
   background-position: left;
 }
+
+@media (max-width: $desktop) {
+  .panda-bg__layout {
+    height: 390px;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: left -173px top -194px;
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .panda-bg__layout {
+    height: 335px;
+    background-size: 210%;
+    background-repeat: no-repeat;
+    background-position: left -260px top -160px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .panda-bg__layout {
+    height: 187px;
+    background-size: 232%;
+    background-repeat: no-repeat;
+    background-position: left -140px top -88px;
+  }
+}
+
+@media (max-width: $tablet-change-breakpoint) {}
