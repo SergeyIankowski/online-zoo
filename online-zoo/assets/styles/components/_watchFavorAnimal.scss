@@ -107,6 +107,12 @@
   }
 }
 
+@media (max-width:$header-change-breakpoint) {
+  .watch-favor-animal {
+    margin-top: 34px;
+  }
+}
+
 @media (max-width: $tablet) {
   .watch-favor-animal .wrapper {
     height: calc(0.5297 * 100vw);
