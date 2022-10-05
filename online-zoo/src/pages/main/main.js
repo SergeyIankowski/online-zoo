@@ -1,5 +1,6 @@
+import '../../assets/styles/main.scss';
 const LOGOS = document.querySelectorAll('.logo');
-LOGOS.forEach(logo => logo.addEventListener('click', () => window.open('../main/index.html', '_self').focus()));
+LOGOS.forEach(logo => logo.addEventListener('click', () => window.open('./main.html', '_self').focus()));
 
 const FOOTER_BUTTON = document.querySelector('.footer__subscribe-button');
 const FOOTER_INPUT = document.querySelector('.footer__subscribe-input');
@@ -27,3 +28,4 @@ const deleteExtraCards = (x) => {
 deleteExtraCards(width640);
 width640.addEventListener('change', () => deleteExtraCards(width640));
 
+const TESTIMONIALS__SCROLLBAR = document.querySelector('.testimonials__scrollbar');

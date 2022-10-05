@@ -1,5 +1,6 @@
+import '../../assets/styles/donate.scss';
 const LOGOS = document.querySelectorAll('.logo');
-LOGOS.forEach(logo => logo.addEventListener('click', () => window.open('../main/index.html', '_self').focus()));
+LOGOS.forEach(logo => logo.addEventListener('click', () => window.open('./main.html', '_self').focus()));
 
 const FOOTER_BUTTON = document.querySelector('.footer__subscribe-button');
 const FOOTER_INPUT = document.querySelector('.footer__subscribe-input');
