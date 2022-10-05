@@ -35,6 +35,13 @@
 }
 
 @media (max-width: $header-change-breakpoint) {
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+  }
+
   .header__layout {
     height: 34px;
   }

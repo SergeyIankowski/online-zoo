@@ -24,6 +24,12 @@
   }
 }
 
+@media(max-width: $header-change-breakpoint) {
+  .panda-bg__layout {
+    margin-top: 34px;
+  }
+}
+
 @media (max-width: $tablet) {
   .panda-bg__layout {
     height: 187px;
