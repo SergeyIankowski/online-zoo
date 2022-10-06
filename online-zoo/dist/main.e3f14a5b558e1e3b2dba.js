@@ -304,7 +304,7 @@ width1000.addEventListener('change', () => {
 });
 
 TESTIMONIALS__SCROLLBAR.addEventListener('input', (e) => {
-  TESTIMONIALS__SLIDE_CONTAINER.style.left = `${-323 * e.target.value}px`;
+  TESTIMONIALS__SLIDE_CONTAINER.style.left = `${-298 * e.target.value}px`;
 });
 
 
@@ -511,4 +511,4 @@ TESTIMONIALS__SCROLLBAR.addEventListener('input', (e) => {
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.4a2295c7f2b51fe6aea5.js.map
+//# sourceMappingURL=main.e3f14a5b558e1e3b2dba.js.map
