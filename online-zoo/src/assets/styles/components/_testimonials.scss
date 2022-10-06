@@ -31,11 +31,12 @@ $progress-bar-border: 1px;
   position: absolute;
   left: 0;
   gap: 30px;
-  flex-wrap: nowrap;
+  transition: 0.3s ease-in;
 }
 
 .testimonials__scrollbar[type="range"] {
-  -webkit-appearance: none;
+  -moz-appearance: none !important;
+  appearance: none !important;
   width: 599px;
   height: 8px;
   background: #F5F7F6;
@@ -66,8 +67,22 @@ $progress-bar-border: 1px;
 }
 
 .testimonials__scrollbar[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 75%;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  width: 50%;
+  height: 6px;
+  background-color: #FE9013;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #E47209;
+  }
+}
+
+.testimonials__scrollbar[type="range"]::-moz-range-thumb {
+  -moz-appearance: none !important;
+  appearance: none !important;
+  width: 50%;
   height: 6px;
   background-color: #FE9013;
   border-radius: 5px;
@@ -157,6 +172,7 @@ $progress-bar-border: 1px;
     align-items: stretch;
     justify-content: flex-start;
     gap: 15px;
+    overflow: scroll;
   }
 
   .testimonials__scrollbar[type="range"] {
