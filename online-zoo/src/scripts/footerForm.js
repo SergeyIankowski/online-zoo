@@ -1,6 +1,4 @@
-const LOGOS = document.querySelectorAll('.logo');
-LOGOS.forEach(logo => logo.addEventListener('click', () => window.open('../main/index.html', '_self').focus()));
-
+/* eslint-disable no-useless-escape */
 const FOOTER_BUTTON = document.querySelector('.footer__subscribe-button');
 const FOOTER_INPUT = document.querySelector('.footer__subscribe-input');
 
@@ -11,4 +9,4 @@ FOOTER_INPUT.oninput = (e) => {
   } else {
     FOOTER_BUTTON.classList.add('button_mistake');
   }
-}
+};
