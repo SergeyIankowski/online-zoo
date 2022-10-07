@@ -19,11 +19,13 @@ export default function pastHamburgerAndSlideMenuEvent(slideMenuItems) {
     if (HAMBURGER.classList.contains('hamburger_active')) {
       HEADER_LAYOUT.append(SLIDE_MENU);
       HEADER_LAYOUT.append(HAMBURGER_OVERLAY);
+      document.body.classList.add('body_hovered');
     }
 
     if (HAMBURGER.classList.contains('hamburger_inactive')) {
       document.querySelector('.slide-menu').remove();
       document.querySelector('.hamburger__overlay').remove();
+      document.body.classList.remove('body_hovered');
     }
   };
   HAMBURGER.addEventListener('click', handleSlideMenuEvent);
