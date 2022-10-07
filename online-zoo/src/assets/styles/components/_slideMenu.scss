@@ -1,0 +1,28 @@
+.slide-menu {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 82px 10px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  transition: 1s ease-in;
+}
+
+.slide-menu__navigation {
+  display: block;
+}
+
+.slide-menu__link {
+  color: $slide-menu-link;
+}
+
+.slide-menu__link_active {
+  color: $link-hover;
+}
+
+.slide-menu__navigation-list {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}

@@ -2,7 +2,7 @@
   position: relative;
   width: 82px;
   height: 52px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid $logo-color-default;
   border-radius: 2px;
 
   &:hover {
@@ -45,6 +45,35 @@
     top: 14px;
     width: 6.78px;
     height: 11.74px;
+  }
+
+  .logo_active {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 82px;
+    height: 52px;
+    border: 1px solid $logo-color-colored;
+    z-index: 5;
+
+    .logo__title {
+      position: absolute;
+      left: 4.75px;
+      top: 3.55px;
+
+      font: normal 400 19px/120% "Roboto";
+      color: $logo-color-colored;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .logo__icon {
+      height: auto;
+      width: auto;
+      left: 10.5px;
+      top: 23px;
+      filter: invert(61%) sepia(51%) saturate(1915%) hue-rotate(350deg) brightness(100%) contrast(100%);
+    }
   }
 }
 

@@ -1,6 +1,6 @@
-const path = require("path")
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const pages = ['main', 'donate'];
 
@@ -12,8 +12,8 @@ module.exports = {
     return config;
   }, {}),
   output: {
-    filename: "[name].[hash].js",
-    path: path.resolve(__dirname, `dist`),
+    filename: '[name].[hash].js',
+    path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: (pathData) => {
       const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
       return `${filepath}/[name][ext]`;
@@ -24,20 +24,19 @@ module.exports = {
   },
   optimization: {
     splitChunks: {
-      chunks: "all",
+      chunks: 'all',
     },
   },
   plugins: [].concat(
     pages.map(
-      (page) =>
-        new HtmlWebpackPlugin({
-          inject: true,
-          template: `./src/pages/${page}/${page}.html`,
-          filename: `${page}.html`,
-          chunks: [page],
-        })
+      (page) => new HtmlWebpackPlugin({
+        inject: true,
+        template: `./src/pages/${page}/${page}.html`,
+        filename: `${page}.html`,
+        chunks: [page],
+      }),
     ),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
   ),
   module: {
     rules: [
@@ -45,11 +44,11 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
-          "style-loader",
+          'style-loader',
           // Translates CSS into CommonJS
-          "css-loader",
+          'css-loader',
           // Compiles Sass to CSS
-          "sass-loader",
+          'sass-loader',
         ],
       },
       {
@@ -58,4 +57,4 @@ module.exports = {
       },
     ],
   },
-}
+};

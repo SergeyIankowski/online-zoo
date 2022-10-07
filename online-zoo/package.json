@@ -4,7 +4,7 @@
   "description": "Online zoo task for the rolling scopes school",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --mode=production",
     "dev": "webpack --watch"
   },
   "repository": {
