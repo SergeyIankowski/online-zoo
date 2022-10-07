@@ -54,6 +54,10 @@
   .header__designed {
     display: none;
   }
+
+  .header__layout_hamburger-active {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: $tablet) {}
