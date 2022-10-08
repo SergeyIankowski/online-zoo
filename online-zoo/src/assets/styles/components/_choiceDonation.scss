@@ -174,7 +174,7 @@
   font: normal 400 16px/140% 'Roboto';
 }
 
-.time-period__radio #btn-5000:checked~.choice-donation-form__bar {
+#btn-5000:checked~.choice-donation-form__bar {
   .choice-donation-form__marker_5000 {
     background: radial-gradient(circle, rgba(255, 238, 46, 1) 17%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, 0) 37%, rgba(254, 144, 19, 1) 37%, rgba(254, 144, 19, 1) 44%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0) 62%, rgba(254, 144, 19, 1) 63%, rgba(254, 144, 19, 1) 70%, rgba(255, 255, 255, 0) 70%);
   }
