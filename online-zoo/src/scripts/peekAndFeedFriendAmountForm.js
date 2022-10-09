@@ -23,6 +23,7 @@ ANOTHER_AMOUNT_INPUT.addEventListener('input', (e) => {
 CHOISE_DONATION_RADIOS.forEach((radio) => radio.addEventListener('click', (e) => {
   ANOTHER_AMOUNT_INPUT.value = e.target.id.slice(4);
 }));
-CHOISE_DONATION_RADIOS[5].checked = true;
+// CHOISE_DONATION_RADIOS[5].checked = true;
 // eslint-disable-next-line prefer-destructuring
 checkedRadio = CHOISE_DONATION_RADIOS[5];
+CHOISE_DONATION_RADIOS[5].click();
