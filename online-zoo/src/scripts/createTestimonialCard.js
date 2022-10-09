@@ -5,7 +5,7 @@ export default function createTestimonialCard({
 }) {
   const TESTIMONIAL = document.createElement('div');
   TESTIMONIAL.classList.add('testimonial');
-  TESTIMONIAL.dataset.testimonailId = id;
+  TESTIMONIAL.dataset.testimonialId = id;
 
   const TESTIMONIAL_HEAD = document.createElement('div');
   TESTIMONIAL_HEAD.classList.add('testimonial__head');

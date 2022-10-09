@@ -6,6 +6,7 @@ import '../../scripts/footerForm';
 import '../../scripts/numberOfCardsMainPage';
 import '../../scripts/appendTestimonialsToPage';
 import '../../scripts/testimonialsScrollbar';
+import '../../scripts/pastPopUpFunctionality';
 
 const NAV_ITEMS = [
   { text: 'About', path: '#', type: 'active' },
