@@ -3,6 +3,7 @@ import '../../assets/styles/main.scss';
 import '../../scripts/logoAsLink';
 import pastHamburgerAndSlideMenuEvent from '../../scripts/hamburgerEvent';
 import '../../scripts/footerForm';
+import '../../scripts/animalCardsModule';
 import '../../scripts/numberOfCardsMainPage';
 import '../../scripts/appendTestimonialsToPage';
 import '../../scripts/testimonialsScrollbar';
