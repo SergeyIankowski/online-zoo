@@ -45,25 +45,6 @@ leftButton.addEventListener('click', (e) => {
     e.preventDefault();
     return;
   }
-  activeSlide.classList.add('to-left');
-  nextSlide.classList.add('from-right');
-  isEnabled = true;
-  activeSlide.addEventListener('animationend', () => {
-    activeSlide.remove();
-    nextSlide.classList.remove('from-right', 'next');
-    nextSlide.classList.add('active');
-    activeSlide = nextSlide;
-    container.append(createPetCardsSlide(petCards, 6, 'next'));
-    deleteExtraCards(width640);
-    nextSlide = document.querySelector('.animal-cards__slide.next');
-    isEnabled = false;
-  });
-});
-rightButton.addEventListener('click', (e) => {
-  if (isEnabled === true) {
-    e.preventDefault();
-    return;
-  }
   prevSlide.classList.add('from-left');
   activeSlide.classList.add('to-right');
   isEnabled = true;
@@ -75,6 +56,25 @@ rightButton.addEventListener('click', (e) => {
     container.prepend(createPetCardsSlide(petCards, 6, 'prev'));
     deleteExtraCards(width640);
     prevSlide = document.querySelector('.animal-cards__slide.prev');
+    isEnabled = false;
+  });
+});
+rightButton.addEventListener('click', (e) => {
+  if (isEnabled === true) {
+    e.preventDefault();
+    return;
+  }
+  activeSlide.classList.add('to-left');
+  nextSlide.classList.add('from-right');
+  isEnabled = true;
+  activeSlide.addEventListener('animationend', () => {
+    activeSlide.remove();
+    nextSlide.classList.remove('from-right', 'next');
+    nextSlide.classList.add('active');
+    activeSlide = nextSlide;
+    container.append(createPetCardsSlide(petCards, 6, 'next'));
+    deleteExtraCards(width640);
+    nextSlide = document.querySelector('.animal-cards__slide.next');
     isEnabled = false;
   });
 });
