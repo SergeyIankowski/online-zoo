@@ -1,16 +1,61 @@
+@keyframes left {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
 .animal-cards {
-  padding-bottom: 100px;
   position: relative;
 }
 
 .animal-cards__layout {
-  gap: 80px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  justify-content: center;
+  justify-items: center;
+  padding-bottom: 234px;
 }
 
-.animal-cards__grid-layout {
+.animal-cards__slide {
   position: relative;
+  left: 0;
+  width: 100%;
+  animation: 1s ease-in-out;
+
+  display: grid;
+  grid-template-columns: repeat(3, 366px);
+  align-content: center;
+  justify-content: center;
   gap: 20px 30px;
-  padding: 0 220px;
+}
+
+.animal-cards__slide.prev {
+  left: 0;
+}
+
+.animal-cards__slide.next {
+  left: 0;
+}
+
+.animal-cards__button-left-arrow,
+.animal-cards__button-right-arrow {
+  z-index: 2;
 }
 
 .animal-cards__button-left-arrow {
@@ -26,7 +71,10 @@
 }
 
 .animal-cards__button {
-  margin: 0 auto;
+  position: absolute;
+  bottom: 100px;
+  right: 50%;
+  transform: translateX(50%)
 }
 
 .animal-cards__img-left {
@@ -41,16 +89,33 @@
   bottom: 0;
 }
 
+.to-left {
+  animation-name: left;
+}
+
+.from-left {
+  animation-name: right;
+}
+
+.to-right {
+  animation-name: right;
+}
+
+.from-right {
+  animation-name: left;
+}
+
+
 @media (max-width: $desktop) {
   .animal-cards {
-    padding-bottom: 140px;
+    padding-bottom: 214px;
     position: relative;
   }
 
-  .animal-cards__grid-layout {
+  .animal-cards__slide {
     position: relative;
+    grid-template-columns: repeat(3, 294px);
     gap: 93px 30px;
-    padding: 0 30px;
   }
 
   .animal-cards__button-left-arrow {
@@ -82,19 +147,13 @@
 
 @media (max-width: $small-desktop) {
   .animal-cards {
-    padding-bottom: 100px;
     position: relative;
     overflow: hidden;
   }
 
-  .animal-cards__layout {
-    gap: 60px;
-  }
-
-  .animal-cards__grid-layout {
-    grid-template-columns: repeat(2, 1fr);
+  .animal-cards__slide {
+    grid-template-columns: repeat(2, 294px);
     gap: 90px 30px;
-    padding: 0 30px;
   }
 
   .animal-cards__button-left-arrow {
@@ -126,7 +185,7 @@
 
 @media (max-width: $tablet) {
   .animal-cards {
-    padding-bottom: 60px;
+    padding-bottom: 134px;
     position: relative;
     overflow: hidden;
   }
@@ -135,8 +194,8 @@
     gap: 20px;
   }
 
-  .animal-cards__grid-layout {
-    grid-template-columns: 1fr;
+  .animal-cards__slide {
+    grid-template-columns: 294px;
     gap: 20px;
     padding: 0 25px 0 10px;
   }
@@ -161,6 +220,10 @@
     right: -20px;
     bottom: -5px;
     height: 71px;
+  }
+
+  .animal-cards__button {
+    bottom: 60px;
   }
 }
 
