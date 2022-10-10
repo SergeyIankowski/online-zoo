@@ -1,0 +1,81 @@
+const petCards = [
+  {
+    id: 1,
+    title: 'Giant Pandas',
+    areal: 'Native to Southwest China',
+    photoPath: '../src/assets/images/pandas.jpg',
+    feedPath: '../src/assets/icons/banana-bamboo_icon.svg',
+  },
+  {
+    id: 2,
+    title: 'Eagles',
+    areal: 'Native to South America',
+    photoPath: '../src/assets/images/eagle.jpg',
+    feedPath: '../src/assets/icons/meet-fish_icon.svg',
+  },
+  {
+    id: 3,
+    title: 'Gorillas',
+    areal: 'Native to Congo',
+    photoPath: '../src/assets/images/gorilla.jpg',
+    feedPath: '../src/assets/icons/banana-bamboo_icon.svg',
+  },
+  {
+    id: 4,
+    title: 'Two-toed sloth',
+    areal: 'Mesoamerica, South America',
+    photoPath: '../src/assets/images/sloth.jpg',
+    feedPath: '../src/assets/icons/banana-bamboo_icon.svg',
+  },
+  {
+    id: 5,
+    title: 'Cheetahs',
+    areal: 'Native to Africa',
+    photoPath: '../src/assets/images/cheetahs.jpg',
+    feedPath: '../src/assets/icons/meet-fish_icon.svg',
+  },
+  {
+    id: 6,
+    title: 'Penguins',
+    areal: 'Native to Antarctica',
+    photoPath: '../src/assets/images/penguin.jpg',
+    feedPath: '../src/assets/icons/meet-fish_icon.svg',
+  },
+  {
+    id: 7,
+    title: 'Alligators',
+    areal: 'Native to Southeastern United States',
+    photoPath: '../src/assets/images/allogator.jpg',
+    feedPath: '../src/assets/icons/meet-fish_icon.svg',
+  },
+  {
+    id: 8,
+    title: 'Fennec Fox',
+    areal: 'Native to the deserts of North Africa',
+    photoPath: '../src/assets/images/fennec-fox.jpg',
+    feedPath: '../src/assets/icons/meet-fish_icon.svg',
+  },
+  {
+    id: 9,
+    title: 'Red panda',
+    areal: 'Native to the eastern Himalayas',
+    photoPath: '../src/assets/images/red-panda.jpg',
+    feedPath: '../src/assets/icons/banana-bamboo_icon.svg',
+  },
+  {
+    id: 10,
+    title: 'Arctic fox',
+    areal: 'native to the Arctic regions',
+    photoPath: '../src/assets/images/arctic-fox.jpg',
+    feedPath: '../src/assets/icons/meet-fish_icon.svg',
+  },
+  {
+    id: 11,
+    title: 'Caribou',
+    areal: 'Native to Arctic, subarctic, tundra',
+    photoPath: '../src/assets/images/caribou.jpg',
+    feedPath: '../src/assets/icons/banana-bamboo_icon.svg',
+  },
+];
+
+export default petCards;
