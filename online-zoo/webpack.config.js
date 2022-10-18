@@ -6,27 +6,34 @@ const pages = ['main', 'donate'];
 
 module.exports = {
   mode: 'none',
+
   devtool: 'cheap-module-source-map',
+
   entry: pages.reduce((config, page) => {
     config[page] = `./src/pages/${page}/${page}.js`;
     return config;
   }, {}),
+
   output: {
     filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist'),
+
     assetModuleFilename: (pathData) => {
       const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
       return `${filepath}/[name][ext]`;
     },
   },
+
   resolve: {
     extensions: ['.js', '.jsx', '.scss'],
   },
+
   optimization: {
     splitChunks: {
       chunks: 'all',
     },
   },
+
   plugins: [].concat(
     pages.map(
       (page) => new HtmlWebpackPlugin({
@@ -38,6 +45,7 @@ module.exports = {
     ),
     new CleanWebpackPlugin(),
   ),
+
   module: {
     rules: [
       {
