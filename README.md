@@ -1,2 +1,3 @@
-# sergeyiankowski-JSFE2022Q3
-Private repository for @sergeyiankowski
+## Online Zoo Landing Page
+
+This project is made by HTML, CSS and Vanilla JavaScript
