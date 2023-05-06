@@ -1,5 +1,5 @@
-## Online Zoo Landing Page
+# Online Zoo Landing Page
 
-This project is made by HTML, CSS and Vanilla JavaScript
+Native HTML, CSS markup project with Vanilla JavaScript.
 
 [Deploy](<https://sergeyiankowski.github.io/online-zoo/dist/main.html>)
